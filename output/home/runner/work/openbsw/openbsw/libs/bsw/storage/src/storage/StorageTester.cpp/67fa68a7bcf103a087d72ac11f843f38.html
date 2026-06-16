@@ -1,0 +1,1640 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../../../../../../../../../../static/css/style.css" />
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <title>Symbol - puncover</title>
+    
+</head>
+<body>
+    <div class="container" id="content">
+        <div class="page-header">
+            <nav class="navbar navbar-default" role="navigation">
+              <div class="container-fluid">
+                <div class="navbar-header">
+                  <a class="navbar-brand" href="../../../../../../../../../../../index.html">
+                    Puncover
+                  </a>
+                </div>
+              </div>
+            </nav>
+          
+        </div>
+        <div id="inner_content">
+        
+    
+    <ol class="breadcrumb folders">
+        
+        <li><a href="../../../../../../../../../../../home.html">home</a></li>
+        
+        <li><a href="../../../../../../../../../../runner.html">runner</a></li>
+        
+        <li><a href="../../../../../../../../../work.html">work</a></li>
+        
+        <li><a href="../../../../../../../../openbsw.html">openbsw</a></li>
+        
+        <li><a href="../../../../../../../openbsw.html">openbsw</a></li>
+        
+        <li><a href="../../../../../../libs.html">libs</a></li>
+        
+        <li><a href="../../../../../bsw.html">bsw</a></li>
+        
+        <li><a href="../../../../storage.html">storage</a></li>
+        
+        <li><a href="../../../src.html">src</a></li>
+        
+        <li ><a href="../../storage.html">storage</a>
+            </li>
+
+        
+        <li class="active"><a href="../StorageTester.cpp.html">StorageTester.cpp</a>:65
+            </li>
+        
+    </ol>
+
+
+    <table class="table table-condensed">
+        <tbody>
+            <tr>
+                <th>Function</th>
+                <td colspan="5">
+                    <span class="icon-function">storage::StorageTester::executeCommand(util::command::CommandContext&amp;, unsigned char)</span>
+                </td>
+            </tr>
+
+            <tr>
+                <th rowspan="2"></th>
+                <th>Address</th>
+                <th>Remarks</th>
+                <th>Stack</th>
+                <th>Code</th>
+                <th>Static</th>
+            </tr>
+            <tr>
+                <td>0x000296a0</td>
+                <td>
+    
+    
+</td>
+                <td>136 (static)</td>
+                <td>1,252</td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <th>No Callers</th>
+                <td colspan="5">
+                
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    Callees (11,
+                            <span title="sum of used bytes by all callees">
+                            Σ=1152
+                            </span>
+                        )
+                    
+                </th>
+                <td colspan="5">
+                
+                    <a href="../../../../util/src/util/format/SharedStringWriter.cpp/24de4bdafd640327a685592964dac867.html">util::format::SharedStringWriter::SharedStringWriter(util::stream::ISharedOutputStream&amp;) (24)</a>
+                    
+                        ,
+                    
+                
+                    <a href="../../../../util/src/util/command/CommandContext.cpp/14bde16788d9f16b26aafb4d12598bec.html">util::command::CommandContext::hasToken() const (24)</a>
+                    
+                        ,
+                    
+                
+                    <a href="../../../../util/src/util/command/CommandContext.cpp/b2ce40f9dd9a53ee51be5469e7a471d7.html">util::command::CommandContext::check(bool, util::command::ICommand::Result) (44)</a>
+                    
+                        ,
+                    
+                
+                    <a href="../../../../util/include/util/command/CommandContext.h/41cbf6e7d93c981ba7638352d8cf0e1d.html">unsigned long util::command::CommandContext::scanIntToken&lt;unsigned long&gt;() (208)</a>
+                    
+                        ,
+                    
+                
+                    <a href="../../../../util/src/util/command/CommandContext.cpp/f92ced5a9b5fc094a2da56efa7916592.html">util::command::CommandContext::scanByteBufferToken(etl::span&lt;unsigned char, 4294967295u&gt; const&amp;) (276)</a>
+                    
+                        ,
+                    
+                
+                    <a href="../../../../asyncFreeRtos/src/async/FutureSupport.cpp/748682a52e2520d2db38b4eee4f703b8.html">async::FutureSupport::wait() (56)</a>
+                    
+                        ,
+                    
+                
+                    <a href="../../../../../../../../../../../unknown/unknown/716af30655f8f3d9b32750dca746ddfb.html">memset (16)</a>
+                    
+                        ,
+                    
+                
+                    <a href="../../../../util/src/util/format/StringWriter.cpp/97429f3089d9f361a2822ba86177689e.html">util::format::StringWriter::printf(char const*, ...) (60)</a>
+                    
+                        ,
+                    
+                
+                    <a href="../../../../util/src/util/format/SharedStringWriter.cpp/75b447666d62ed8c6c384efa69c8d1d1.html">util::format::SharedStringWriter::~SharedStringWriter() (20)</a>
+                    
+                        ,
+                    
+                
+                    <a href="../../../../util/include/util/command/CommandContext.h/8c091e8e2108d680275eaeb483069924.html">unsigned char util::command::CommandContext::scanIntToken&lt;unsigned char&gt;() (216)</a>
+                    
+                        ,
+                    
+                
+                    <a href="../../../../util/include/util/command/CommandContext.h/f209b8786519599565c50e23c6065ef6.html">unsigned int util::command::CommandContext::scanIntToken&lt;unsigned int&gt;() (208)</a>
+                    
+                
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    
+    <pre><a href="../../../../util/include/util/command/CommandContext.h/f209b8786519599565c50e23c6065ef6.html">unsigned int util::command::CommandContext::scanIntToken&lt;unsigned int&gt;() (208)</a></pre>
+    
+
+    <pre>
+
+    storage::StorageTester::executeCommand(util::command::CommandContext&, unsigned char):
+
+       296a0:	e92d 4ff0 	stmdb	sp!, {r4, r5, r6, r7, r8, r9, sl, fp, lr}
+
+       296a4:	b099      	sub	sp, #100	@ 0x64
+
+       296a6:	4607      	mov	r7, r0
+
+       296a8:	4668      	mov	r0, sp
+
+       296aa:	4616      	mov	r6, r2
+
+       296ac:	460c      	mov	r4, r1
+
+       296ae:	f7ea fb39 	bl	13d24 <<a href="../../../../util/src/util/format/SharedStringWriter.cpp/24de4bdafd640327a685592964dac867.html">util::format::SharedStringWriter::SharedStringWriter(util::stream::ISharedOutputStream&)</a>>
+
+    _ZN3etl7variantIJN7storage10StorageJob4Type4NoneENS3_5WriteENS3_4ReadEEEC4IS4_Li0EEEOT_():
+
+       296b2:	4b97      	ldr	r3, [pc, #604]	@ (29910 <<a href="./67fa68a7bcf103a087d72ac11f843f38.html">storage::StorageTester::executeCommand(util::command::CommandContext&, unsigned char)</a>+0x270>)
+
+    _ZN3etl7variantIJN7storage10StorageJob6Result4InitENS3_5ErrorENS3_8DataLossENS3_7SuccessEEEC4IS4_Li0EEEOT_():
+
+       296b4:	f8df 826c 	ldr.w	r8, [pc, #620]	@ 29924 <<a href="./67fa68a7bcf103a087d72ac11f843f38.html">storage::StorageTester::executeCommand(util::command::CommandContext&, unsigned char)</a>+0x284>
+
+    _ZN3etl7variantIJN7storage10StorageJob4Type4NoneENS3_5WriteENS3_4ReadEEEC4IS4_Li0EEEOT_():
+
+       296b8:	9312      	str	r3, [sp, #72]	@ 0x48
+
+    _ZN3etl7variantIJN7storage10StorageJob6Result4InitENS3_5ErrorENS3_8DataLossENS3_7SuccessEEEC4IS4_Li0EEEOT_():
+
+       296ba:	2500      	movs	r5, #0
+
+    _ZN3etl18bidirectional_linkILj0EEC4Ev():
+
+       296bc:	2200      	movs	r2, #0
+
+       296be:	2300      	movs	r3, #0
+
+    storage::StorageTester::executeCommand(util::command::CommandContext&, unsigned char):
+
+       296c0:	2e02      	cmp	r6, #2
+
+    _ZN3etl8delegateIFvRN7storage10StorageJobEEE18invocation_elementC4Ev():
+
+       296c2:	e9cd 5514 	strd	r5, r5, [sp, #80]	@ 0x50
+
+    _ZN3etl18bidirectional_linkILj0EEC4Ev():
+
+       296c6:	e9cd 230a 	strd	r2, r3, [sp, #40]	@ 0x28
+
+    _ZN3etl7variantIJN7storage10StorageJob6Result4InitENS3_5ErrorENS3_8DataLossENS3_7SuccessEEEC4IS4_Li0EEEOT_():
+
+       296ca:	950e      	str	r5, [sp, #56]	@ 0x38
+
+    _ZN3etl7variantIJN7storage10StorageJob4Type4NoneENS3_5WriteENS3_4ReadEEEC4IS4_Li0EEEOT_():
+
+       296cc:	9513      	str	r5, [sp, #76]	@ 0x4c
+
+    _ZN7storage10StorageJobC4Ev():
+
+       296ce:	9516      	str	r5, [sp, #88]	@ 0x58
+
+    _ZN3etl7variantIJN7storage10StorageJob6Result4InitENS3_5ErrorENS3_8DataLossENS3_7SuccessEEEC4IS4_Li0EEEOT_():
+
+       296d0:	f8cd 8034 	str.w	r8, [sp, #52]	@ 0x34
+
+    storage::StorageTester::executeCommand(util::command::CommandContext&, unsigned char):
+
+       296d4:	f000 80f5 	beq.w	298c2 <<a href="./67fa68a7bcf103a087d72ac11f843f38.html">storage::StorageTester::executeCommand(util::command::CommandContext&, unsigned char)</a>+0x222>
+
+       296d8:	2e03      	cmp	r6, #3
+
+       296da:	d070      	beq.n	297be <<a href="./67fa68a7bcf103a087d72ac11f843f38.html">storage::StorageTester::executeCommand(util::command::CommandContext&, unsigned char)</a>+0x11e>
+
+       296dc:	2e01      	cmp	r6, #1
+
+       296de:	f040 8100 	bne.w	298e2 <<a href="./67fa68a7bcf103a087d72ac11f843f38.html">storage::StorageTester::executeCommand(util::command::CommandContext&, unsigned char)</a>+0x242>
+
+       296e2:	4620      	mov	r0, r4
+
+       296e4:	f7ea fbea 	bl	13ebc <<a href="../../../../util/src/util/command/CommandContext.cpp/14bde16788d9f16b26aafb4d12598bec.html">util::command::CommandContext::hasToken() const</a>>
+
+       296e8:	2202      	movs	r2, #2
+
+       296ea:	4601      	mov	r1, r0
+
+       296ec:	4620      	mov	r0, r4
+
+       296ee:	f7ea fc03 	bl	13ef8 <<a href="../../../../util/src/util/command/CommandContext.cpp/b2ce40f9dd9a53ee51be5469e7a471d7.html">util::command::CommandContext::check(bool, util::command::ICommand::Result)</a>>
+
+       296f2:	2800      	cmp	r0, #0
+
+       296f4:	f000 8198 	beq.w	29a28 <<a href="./67fa68a7bcf103a087d72ac11f843f38.html">storage::StorageTester::executeCommand(util::command::CommandContext&, unsigned char)</a>+0x388>
+
+       296f8:	4620      	mov	r0, r4
+
+       296fa:	f7e5 fd3b 	bl	f174 <<a href="../../../../util/include/util/command/CommandContext.h/41cbf6e7d93c981ba7638352d8cf0e1d.html">unsigned long util::command::CommandContext::scanIntToken<unsigned long>()</a>>
+
+       296fe:	4606      	mov	r6, r0
+
+       29700:	4620      	mov	r0, r4
+
+       29702:	f7ea fbdb 	bl	13ebc <<a href="../../../../util/src/util/command/CommandContext.cpp/14bde16788d9f16b26aafb4d12598bec.html">util::command::CommandContext::hasToken() const</a>>
+
+       29706:	2202      	movs	r2, #2
+
+       29708:	4601      	mov	r1, r0
+
+       2970a:	4620      	mov	r0, r4
+
+       2970c:	f7ea fbf4 	bl	13ef8 <<a href="../../../../util/src/util/command/CommandContext.cpp/b2ce40f9dd9a53ee51be5469e7a471d7.html">util::command::CommandContext::check(bool, util::command::ICommand::Result)</a>>
+
+       29710:	2800      	cmp	r0, #0
+
+       29712:	f000 8189 	beq.w	29a28 <<a href="./67fa68a7bcf103a087d72ac11f843f38.html">storage::StorageTester::executeCommand(util::command::CommandContext&, unsigned char)</a>+0x388>
+
+       29716:	4621      	mov	r1, r4
+
+       29718:	f107 023c 	add.w	r2, r7, #60	@ 0x3c
+
+       2971c:	a802      	add	r0, sp, #8
+
+       2971e:	f7ea fcab 	bl	14078 <<a href="../../../../util/src/util/command/CommandContext.cpp/f92ced5a9b5fc094a2da56efa7916592.html">util::command::CommandContext::scanByteBufferToken(etl::span<unsigned char, 4294967295u> const&)</a>>
+
+    _ZNK3etl4spanIhLj4294967295EE4sizeEv():
+
+       29722:	e9dd 1302 	ldrd	r1, r3, [sp, #8]
+
+       29726:	1a58      	subs	r0, r3, r1
+
+    _ZNK3etl4spanIhLj4294967295EE5firstEj():
+
+       29728:	6bf9      	ldr	r1, [r7, #60]	@ 0x3c
+
+    _ZN3etl4spanIKhLj4294967295EEC4ERKS2_():
+
+       2972a:	9104      	str	r1, [sp, #16]
+
+       2972c:	f107 030c 	add.w	r3, r7, #12
+
+    _ZNK3etl4spanIhLj4294967295EE5firstEj():
+
+       29730:	4401      	add	r1, r0
+
+    _ZN3etl7variantIJN7storage10StorageJob6Result4InitENS3_5ErrorENS3_8DataLossENS3_7SuccessEEEaSIS4_Li0EEERS8_OT_():
+
+       29732:	9a0e      	ldr	r2, [sp, #56]	@ 0x38
+
+    _ZN3etl4spanIKhLj4294967295EEC4ERKS2_():
+
+       29734:	9105      	str	r1, [sp, #20]
+
+    storage::StorageTester::executeCommand(util::command::CommandContext&, unsigned char):
+
+       29736:	e893 0003 	ldmia.w	r3, {r0, r1}
+
+       2973a:	f10d 091c 	add.w	r9, sp, #28
+
+    _ZN3etl7variantIJN7storage10StorageJob6Result4InitENS3_5ErrorENS3_8DataLossENS3_7SuccessEEEaSIS4_Li0EEERS8_OT_():
+
+       2973e:	3201      	adds	r2, #1
+
+       29740:	e889 0003 	stmia.w	r9, {r0, r1}
+
+    _ZN7storage10StorageJob4initEmN3etl8delegateIFvRS0_EEE():
+
+       29744:	9616      	str	r6, [sp, #88]	@ 0x58
+
+    _ZN4util6buffer12LinkedBufferIKhEC4EN3etl4spanIS2_Lj4294967295EEEPS3_():
+
+       29746:	9506      	str	r5, [sp, #24]
+
+    _ZN3etl7variantIJN7storage10StorageJob6Result4InitENS3_5ErrorENS3_8DataLossENS3_7SuccessEEEaSIS4_Li0EEERS8_OT_():
+
+       29748:	d004      	beq.n	29754 <<a href="./67fa68a7bcf103a087d72ac11f843f38.html">storage::StorageTester::executeCommand(util::command::CommandContext&, unsigned char)</a>+0xb4>
+
+       2974a:	9b0d      	ldr	r3, [sp, #52]	@ 0x34
+
+       2974c:	462a      	mov	r2, r5
+
+       2974e:	a90c      	add	r1, sp, #48	@ 0x30
+
+       29750:	2002      	movs	r0, #2
+
+       29752:	4798      	blx	r3
+
+    _ZN7storage10StorageJob4initEmN3etl8delegateIFvRS0_EEE():
+
+       29754:	e899 0003 	ldmia.w	r9, {r0, r1}
+
+    _ZN3etl7variantIJN7storage10StorageJob4Type4NoneENS3_5WriteENS3_4ReadEEE7emplaceIS5_JRN4util6buffer12LinkedBufferIKhEERKjEEERT_DpOT0_():
+
+       29758:	9c13      	ldr	r4, [sp, #76]	@ 0x4c
+
+    _ZN3etl7variantIJN7storage10StorageJob6Result4InitENS3_5ErrorENS3_8DataLossENS3_7SuccessEEEaSIS4_Li0EEERS8_OT_():
+
+       2975a:	f8cd 8034 	str.w	r8, [sp, #52]	@ 0x34
+
+       2975e:	2200      	movs	r2, #0
+
+    _ZN7storage10StorageJob4initEmN3etl8delegateIFvRS0_EEE():
+
+       29760:	ab14      	add	r3, sp, #80	@ 0x50
+
+    _ZN3etl7variantIJN7storage10StorageJob4Type4NoneENS3_5WriteENS3_4ReadEEE7emplaceIS5_JRN4util6buffer12LinkedBufferIKhEERKjEEERT_DpOT0_():
+
+       29762:	3401      	adds	r4, #1
+
+    _ZN7storage10StorageJob4initEmN3etl8delegateIFvRS0_EEE():
+
+       29764:	e883 0003 	stmia.w	r3, {r0, r1}
+
+    _ZN3etl7variantIJN7storage10StorageJob6Result4InitENS3_5ErrorENS3_8DataLossENS3_7SuccessEEEaSIS4_Li0EEERS8_OT_():
+
+       29768:	920e      	str	r2, [sp, #56]	@ 0x38
+
+    _ZN3etl7variantIJN7storage10StorageJob4Type4NoneENS3_5WriteENS3_4ReadEEE7emplaceIS5_JRN4util6buffer12LinkedBufferIKhEERKjEEERT_DpOT0_():
+
+       2976a:	d003      	beq.n	29774 <<a href="./67fa68a7bcf103a087d72ac11f843f38.html">storage::StorageTester::executeCommand(util::command::CommandContext&, unsigned char)</a>+0xd4>
+
+       2976c:	9b12      	ldr	r3, [sp, #72]	@ 0x48
+
+       2976e:	a90f      	add	r1, sp, #60	@ 0x3c
+
+       29770:	2002      	movs	r0, #2
+
+       29772:	4798      	blx	r3
+
+    storage::StorageTester::executeCommand(util::command::CommandContext&, unsigned char):
+
+       29774:	68b8      	ldr	r0, [r7, #8]
+
+    _ZN3etl7variantIJN7storage10StorageJob4Type4NoneENS3_5WriteENS3_4ReadEEE7emplaceIS5_JRN4util6buffer12LinkedBufferIKhEERKjEEERT_DpOT0_():
+
+       29776:	4b67      	ldr	r3, [pc, #412]	@ (29914 <<a href="./67fa68a7bcf103a087d72ac11f843f38.html">storage::StorageTester::executeCommand(util::command::CommandContext&, unsigned char)</a>+0x274>)
+
+       29778:	9312      	str	r3, [sp, #72]	@ 0x48
+
+       2977a:	2301      	movs	r3, #1
+
+    _ZN7storage10StorageJob4Type5WriteC4ERN4util6buffer12LinkedBufferIKhEEj():
+
+       2977c:	aa04      	add	r2, sp, #16
+
+    _ZN3etl7variantIJN7storage10StorageJob4Type4NoneENS3_5WriteENS3_4ReadEEE7emplaceIS5_JRN4util6buffer12LinkedBufferIKhEERKjEEERT_DpOT0_():
+
+       2977e:	9313      	str	r3, [sp, #76]	@ 0x4c
+
+    storage::StorageTester::executeCommand(util::command::CommandContext&, unsigned char):
+
+       29780:	6803      	ldr	r3, [r0, #0]
+
+    _ZN7storage10StorageJob4Type5WriteC4ERN4util6buffer12LinkedBufferIKhEEj():
+
+       29782:	920f      	str	r2, [sp, #60]	@ 0x3c
+
+       29784:	2200      	movs	r2, #0
+
+    storage::StorageTester::executeCommand(util::command::CommandContext&, unsigned char):
+
+       29786:	681b      	ldr	r3, [r3, #0]
+
+    _ZN7storage10StorageJob4Type5WriteC4ERN4util6buffer12LinkedBufferIKhEEj():
+
+       29788:	9210      	str	r2, [sp, #64]	@ 0x40
+
+    storage::StorageTester::executeCommand(util::command::CommandContext&, unsigned char):
+
+       2978a:	a90a      	add	r1, sp, #40	@ 0x28
+
+       2978c:	4798      	blx	r3
+
+       2978e:	f107 0014 	add.w	r0, r7, #20
+
+       29792:	f005 fbd7 	bl	2ef44 <<a href="../../../../asyncFreeRtos/src/async/FutureSupport.cpp/748682a52e2520d2db38b4eee4f703b8.html">async::FutureSupport::wait()</a>>
+
+    _ZNK3etl7variantIJN7storage10StorageJob6Result4InitENS3_5ErrorENS3_8DataLossENS3_7SuccessEEE5indexEv():
+
+       29796:	9a0e      	ldr	r2, [sp, #56]	@ 0x38
+
+    _ZN3etl15private_variant15is_same_type_inIN7storage10StorageJob6Result7SuccessENS4_4InitENS4_5ErrorEJNS4_8DataLossES5_EEENS_9enable_ifIXntsrNS_7is_sameIT_T0_EE5valueEbE4typeEj():
+
+       29798:	2a00      	cmp	r2, #0
+
+       2979a:	f000 814f 	beq.w	29a3c <<a href="./67fa68a7bcf103a087d72ac11f843f38.html">storage::StorageTester::executeCommand(util::command::CommandContext&, unsigned char)</a>+0x39c>
+
+    _ZN3etl15private_variant15is_same_type_inIN7storage10StorageJob6Result7SuccessENS4_5ErrorENS4_8DataLossEJS5_EEENS_9enable_ifIXntsrNS_7is_sameIT_T0_EE5valueEbE4typeEj():
+
+       2979e:	2a01      	cmp	r2, #1
+
+       297a0:	f000 814c 	beq.w	29a3c <<a href="./67fa68a7bcf103a087d72ac11f843f38.html">storage::StorageTester::executeCommand(util::command::CommandContext&, unsigned char)</a>+0x39c>
+
+    _ZN3etl15private_variant15is_same_type_inIN7storage10StorageJob4Type4ReadENS4_5WriteES5_JEEENS_9enable_ifIXntsrNS_7is_sameIT_T0_EE5valueEbE4typeEj():
+
+       297a4:	1e93      	subs	r3, r2, #2
+
+       297a6:	f000 81b6 	beq.w	29b16 <<a href="./67fa68a7bcf103a087d72ac11f843f38.html">storage::StorageTester::executeCommand(util::command::CommandContext&, unsigned char)</a>+0x476>
+
+    storage::StorageTester::executeCommand(util::command::CommandContext&, unsigned char):
+
+       297aa:	2b01      	cmp	r3, #1
+
+       297ac:	f000 8177 	beq.w	29a9e <<a href="./67fa68a7bcf103a087d72ac11f843f38.html">storage::StorageTester::executeCommand(util::command::CommandContext&, unsigned char)</a>+0x3fe>
+
+    _ZN3etl7variantIJN7storage10StorageJob6Result4InitENS3_5ErrorENS3_8DataLossENS3_7SuccessEEEC4ERKS8_():
+
+       297b0:	9b0d      	ldr	r3, [sp, #52]	@ 0x34
+
+       297b2:	9308      	str	r3, [sp, #32]
+
+       297b4:	1c54      	adds	r4, r2, #1
+
+       297b6:	9209      	str	r2, [sp, #36]	@ 0x24
+
+       297b8:	f000 8148 	beq.w	29a4c <<a href="./67fa68a7bcf103a087d72ac11f843f38.html">storage::StorageTester::executeCommand(util::command::CommandContext&, unsigned char)</a>+0x3ac>
+
+       297bc:	e141      	b.n	29a42 <<a href="./67fa68a7bcf103a087d72ac11f843f38.html">storage::StorageTester::executeCommand(util::command::CommandContext&, unsigned char)</a>+0x3a2>
+
+    storage::StorageTester::executeCommand(util::command::CommandContext&, unsigned char):
+
+       297be:	4620      	mov	r0, r4
+
+       297c0:	f7ea fb7c 	bl	13ebc <<a href="../../../../util/src/util/command/CommandContext.cpp/14bde16788d9f16b26aafb4d12598bec.html">util::command::CommandContext::hasToken() const</a>>
+
+       297c4:	2202      	movs	r2, #2
+
+       297c6:	4601      	mov	r1, r0
+
+       297c8:	4620      	mov	r0, r4
+
+       297ca:	f7ea fb95 	bl	13ef8 <<a href="../../../../util/src/util/command/CommandContext.cpp/b2ce40f9dd9a53ee51be5469e7a471d7.html">util::command::CommandContext::check(bool, util::command::ICommand::Result)</a>>
+
+       297ce:	2800      	cmp	r0, #0
+
+       297d0:	f000 812f 	beq.w	29a32 <<a href="./67fa68a7bcf103a087d72ac11f843f38.html">storage::StorageTester::executeCommand(util::command::CommandContext&, unsigned char)</a>+0x392>
+
+       297d4:	4620      	mov	r0, r4
+
+       297d6:	f7e5 fccd 	bl	f174 <<a href="../../../../util/include/util/command/CommandContext.h/41cbf6e7d93c981ba7638352d8cf0e1d.html">unsigned long util::command::CommandContext::scanIntToken<unsigned long>()</a>>
+
+       297da:	4606      	mov	r6, r0
+
+       297dc:	4620      	mov	r0, r4
+
+    _ZNK3etl4spanIhLj4294967295EE4sizeEv():
+
+       297de:	f8d7 9040 	ldr.w	r9, [r7, #64]	@ 0x40
+
+       297e2:	6bfd      	ldr	r5, [r7, #60]	@ 0x3c
+
+    storage::StorageTester::executeCommand(util::command::CommandContext&, unsigned char):
+
+       297e4:	f7ea fb6a 	bl	13ebc <<a href="../../../../util/src/util/command/CommandContext.cpp/14bde16788d9f16b26aafb4d12598bec.html">util::command::CommandContext::hasToken() const</a>>
+
+       297e8:	2800      	cmp	r0, #0
+
+       297ea:	f040 814a 	bne.w	29a82 <<a href="./67fa68a7bcf103a087d72ac11f843f38.html">storage::StorageTester::executeCommand(util::command::CommandContext&, unsigned char)</a>+0x3e2>
+
+    _ZNK3etl4spanIhLj4294967295EE4sizeEv():
+
+       297ee:	eba9 0505 	sub.w	r5, r9, r5
+
+    storage::StorageTester::executeCommand(util::command::CommandContext&, unsigned char):
+
+       297f2:	2d00      	cmp	r5, #0
+
+       297f4:	f000 8140 	beq.w	29a78 <<a href="./67fa68a7bcf103a087d72ac11f843f38.html">storage::StorageTester::executeCommand(util::command::CommandContext&, unsigned char)</a>+0x3d8>
+
+    _ZNK3etl4spanIhLj4294967295EE4sizeEv():
+
+       297f8:	6bfc      	ldr	r4, [r7, #60]	@ 0x3c
+
+       297fa:	6c3b      	ldr	r3, [r7, #64]	@ 0x40
+
+       297fc:	1b1b      	subs	r3, r3, r4
+
+    storage::StorageTester::executeCommand(util::command::CommandContext&, unsigned char):
+
+       297fe:	429d      	cmp	r5, r3
+
+       29800:	f200 813a 	bhi.w	29a78 <<a href="./67fa68a7bcf103a087d72ac11f843f38.html">storage::StorageTester::executeCommand(util::command::CommandContext&, unsigned char)</a>+0x3d8>
+
+    _ZN3etl7mem_setIPhhEENS_9enable_ifIXaaaaaasrNS_10is_pointerIT_EE5valuentsrNS_8is_constIS4_EE5valuesrNS_11is_integralIT0_EE5valueeqstS9_Li1EES4_E4typeES4_jS9_():
+
+       29804:	462a      	mov	r2, r5
+
+       29806:	2100      	movs	r1, #0
+
+       29808:	4620      	mov	r0, r4
+
+       2980a:	f7d6 fed6 	bl	5ba <<a href="../../../../../../../../../../../unknown/unknown/716af30655f8f3d9b32750dca746ddfb.html">memset</a>>
+
+       2980e:	f107 030c 	add.w	r3, r7, #12
+
+       29812:	e893 0003 	ldmia.w	r3, {r0, r1}
+
+    _ZN3etl7variantIJN7storage10StorageJob6Result4InitENS3_5ErrorENS3_8DataLossENS3_7SuccessEEEaSIS4_Li0EEERS8_OT_():
+
+       29816:	9b0e      	ldr	r3, [sp, #56]	@ 0x38
+
+    _ZN7storage10StorageJob4initEmN3etl8delegateIFvRS0_EEE():
+
+       29818:	9616      	str	r6, [sp, #88]	@ 0x58
+
+    _ZNK3etl4spanIhLj4294967295EE5firstEj():
+
+       2981a:	eb04 0905 	add.w	r9, r4, r5
+
+    _ZN3etl4spanIhLj4294967295EEC4ERKS1_():
+
+       2981e:	f8cd 9014 	str.w	r9, [sp, #20]
+
+    _ZN4util6buffer12LinkedBufferIhEC4EN3etl4spanIhLj4294967295EEEPS2_():
+
+       29822:	2200      	movs	r2, #0
+
+       29824:	f10d 091c 	add.w	r9, sp, #28
+
+    _ZN3etl7variantIJN7storage10StorageJob6Result4InitENS3_5ErrorENS3_8DataLossENS3_7SuccessEEEaSIS4_Li0EEERS8_OT_():
+
+       29828:	3301      	adds	r3, #1
+
+       2982a:	e889 0003 	stmia.w	r9, {r0, r1}
+
+    _ZN3etl4spanIhLj4294967295EEC4ERKS1_():
+
+       2982e:	9404      	str	r4, [sp, #16]
+
+    _ZN4util6buffer12LinkedBufferIhEC4EN3etl4spanIhLj4294967295EEEPS2_():
+
+       29830:	9206      	str	r2, [sp, #24]
+
+    _ZN3etl7variantIJN7storage10StorageJob6Result4InitENS3_5ErrorENS3_8DataLossENS3_7SuccessEEEaSIS4_Li0EEERS8_OT_():
+
+       29832:	d003      	beq.n	2983c <<a href="./67fa68a7bcf103a087d72ac11f843f38.html">storage::StorageTester::executeCommand(util::command::CommandContext&, unsigned char)</a>+0x19c>
+
+       29834:	9b0d      	ldr	r3, [sp, #52]	@ 0x34
+
+       29836:	a90c      	add	r1, sp, #48	@ 0x30
+
+       29838:	2002      	movs	r0, #2
+
+       2983a:	4798      	blx	r3
+
+    _ZN7storage10StorageJob4initEmN3etl8delegateIFvRS0_EEE():
+
+       2983c:	e899 0003 	ldmia.w	r9, {r0, r1}
+
+    _ZN3etl7variantIJN7storage10StorageJob4Type4NoneENS3_5WriteENS3_4ReadEEE7emplaceIS6_JRN4util6buffer12LinkedBufferIhEERKjEEERT_DpOT0_():
+
+       29840:	9e13      	ldr	r6, [sp, #76]	@ 0x4c
+
+    _ZN3etl7variantIJN7storage10StorageJob6Result4InitENS3_5ErrorENS3_8DataLossENS3_7SuccessEEEaSIS4_Li0EEERS8_OT_():
+
+       29842:	f8cd 8034 	str.w	r8, [sp, #52]	@ 0x34
+
+       29846:	2200      	movs	r2, #0
+
+    _ZN7storage10StorageJob4initEmN3etl8delegateIFvRS0_EEE():
+
+       29848:	ab14      	add	r3, sp, #80	@ 0x50
+
+    _ZN3etl7variantIJN7storage10StorageJob4Type4NoneENS3_5WriteENS3_4ReadEEE7emplaceIS6_JRN4util6buffer12LinkedBufferIhEERKjEEERT_DpOT0_():
+
+       2984a:	3601      	adds	r6, #1
+
+    _ZN7storage10StorageJob4initEmN3etl8delegateIFvRS0_EEE():
+
+       2984c:	e883 0003 	stmia.w	r3, {r0, r1}
+
+    _ZN3etl7variantIJN7storage10StorageJob6Result4InitENS3_5ErrorENS3_8DataLossENS3_7SuccessEEEaSIS4_Li0EEERS8_OT_():
+
+       29850:	920e      	str	r2, [sp, #56]	@ 0x38
+
+    _ZN3etl7variantIJN7storage10StorageJob4Type4NoneENS3_5WriteENS3_4ReadEEE7emplaceIS6_JRN4util6buffer12LinkedBufferIhEERKjEEERT_DpOT0_():
+
+       29852:	d003      	beq.n	2985c <<a href="./67fa68a7bcf103a087d72ac11f843f38.html">storage::StorageTester::executeCommand(util::command::CommandContext&, unsigned char)</a>+0x1bc>
+
+       29854:	9b12      	ldr	r3, [sp, #72]	@ 0x48
+
+       29856:	a90f      	add	r1, sp, #60	@ 0x3c
+
+       29858:	2002      	movs	r0, #2
+
+       2985a:	4798      	blx	r3
+
+    storage::StorageTester::executeCommand(util::command::CommandContext&, unsigned char):
+
+       2985c:	68b8      	ldr	r0, [r7, #8]
+
+    _ZN3etl7variantIJN7storage10StorageJob4Type4NoneENS3_5WriteENS3_4ReadEEE7emplaceIS6_JRN4util6buffer12LinkedBufferIhEERKjEEERT_DpOT0_():
+
+       2985e:	4b2e      	ldr	r3, [pc, #184]	@ (29918 <<a href="./67fa68a7bcf103a087d72ac11f843f38.html">storage::StorageTester::executeCommand(util::command::CommandContext&, unsigned char)</a>+0x278>)
+
+       29860:	9312      	str	r3, [sp, #72]	@ 0x48
+
+    _ZN7storage10StorageJob4Type4ReadC4ERN4util6buffer12LinkedBufferIhEEj():
+
+       29862:	ed9f 7b29 	vldr	d7, [pc, #164]	@ 29908 <<a href="./67fa68a7bcf103a087d72ac11f843f38.html">storage::StorageTester::executeCommand(util::command::CommandContext&, unsigned char)</a>+0x268>
+
+    storage::StorageTester::executeCommand(util::command::CommandContext&, unsigned char):
+
+       29866:	6803      	ldr	r3, [r0, #0]
+
+    _ZN7storage10StorageJob4Type4ReadC4ERN4util6buffer12LinkedBufferIhEEj():
+
+       29868:	aa04      	add	r2, sp, #16
+
+    _ZN3etl7variantIJN7storage10StorageJob4Type4NoneENS3_5WriteENS3_4ReadEEE7emplaceIS6_JRN4util6buffer12LinkedBufferIhEERKjEEERT_DpOT0_():
+
+       2986a:	2602      	movs	r6, #2
+
+    storage::StorageTester::executeCommand(util::command::CommandContext&, unsigned char):
+
+       2986c:	681b      	ldr	r3, [r3, #0]
+
+    _ZN7storage10StorageJob4Type4ReadC4ERN4util6buffer12LinkedBufferIhEEj():
+
+       2986e:	920f      	str	r2, [sp, #60]	@ 0x3c
+
+       29870:	ed8d 7b10 	vstr	d7, [sp, #64]	@ 0x40
+
+    storage::StorageTester::executeCommand(util::command::CommandContext&, unsigned char):
+
+       29874:	a90a      	add	r1, sp, #40	@ 0x28
+
+    _ZN3etl7variantIJN7storage10StorageJob4Type4NoneENS3_5WriteENS3_4ReadEEE7emplaceIS6_JRN4util6buffer12LinkedBufferIhEERKjEEERT_DpOT0_():
+
+       29876:	9613      	str	r6, [sp, #76]	@ 0x4c
+
+    storage::StorageTester::executeCommand(util::command::CommandContext&, unsigned char):
+
+       29878:	4798      	blx	r3
+
+       2987a:	f107 0014 	add.w	r0, r7, #20
+
+       2987e:	f005 fb61 	bl	2ef44 <<a href="../../../../asyncFreeRtos/src/async/FutureSupport.cpp/748682a52e2520d2db38b4eee4f703b8.html">async::FutureSupport::wait()</a>>
+
+    _ZNK3etl7variantIJN7storage10StorageJob6Result4InitENS3_5ErrorENS3_8DataLossENS3_7SuccessEEE5indexEv():
+
+       29882:	9a0e      	ldr	r2, [sp, #56]	@ 0x38
+
+    _ZN3etl15private_variant15is_same_type_inIN7storage10StorageJob6Result7SuccessENS4_4InitENS4_5ErrorEJNS4_8DataLossES5_EEENS_9enable_ifIXntsrNS_7is_sameIT_T0_EE5valueEbE4typeEj():
+
+       29884:	2a00      	cmp	r2, #0
+
+       29886:	f000 8101 	beq.w	29a8c <<a href="./67fa68a7bcf103a087d72ac11f843f38.html">storage::StorageTester::executeCommand(util::command::CommandContext&, unsigned char)</a>+0x3ec>
+
+    _ZN3etl15private_variant15is_same_type_inIN7storage10StorageJob6Result7SuccessENS4_5ErrorENS4_8DataLossEJS5_EEENS_9enable_ifIXntsrNS_7is_sameIT_T0_EE5valueEbE4typeEj():
+
+       2988a:	2a01      	cmp	r2, #1
+
+       2988c:	f000 80fe 	beq.w	29a8c <<a href="./67fa68a7bcf103a087d72ac11f843f38.html">storage::StorageTester::executeCommand(util::command::CommandContext&, unsigned char)</a>+0x3ec>
+
+    _ZN3etl15private_variant15is_same_type_inIN7storage10StorageJob4Type4ReadENS4_5WriteES5_JEEENS_9enable_ifIXntsrNS_7is_sameIT_T0_EE5valueEbE4typeEj():
+
+       29890:	1e93      	subs	r3, r2, #2
+
+       29892:	f000 814e 	beq.w	29b32 <<a href="./67fa68a7bcf103a087d72ac11f843f38.html">storage::StorageTester::executeCommand(util::command::CommandContext&, unsigned char)</a>+0x492>
+
+    storage::StorageTester::executeCommand(util::command::CommandContext&, unsigned char):
+
+       29896:	2b01      	cmp	r3, #1
+
+       29898:	f000 8106 	beq.w	29aa8 <<a href="./67fa68a7bcf103a087d72ac11f843f38.html">storage::StorageTester::executeCommand(util::command::CommandContext&, unsigned char)</a>+0x408>
+
+    _ZN3etl7variantIJN7storage10StorageJob6Result4InitENS3_5ErrorENS3_8DataLossENS3_7SuccessEEEC4ERKS8_():
+
+       2989c:	9b0d      	ldr	r3, [sp, #52]	@ 0x34
+
+       2989e:	9308      	str	r3, [sp, #32]
+
+       298a0:	1c51      	adds	r1, r2, #1
+
+       298a2:	9209      	str	r2, [sp, #36]	@ 0x24
+
+       298a4:	f040 80f5 	bne.w	29a92 <<a href="./67fa68a7bcf103a087d72ac11f843f38.html">storage::StorageTester::executeCommand(util::command::CommandContext&, unsigned char)</a>+0x3f2>
+
+    storage::StorageTester::executeCommand(util::command::CommandContext&, unsigned char):
+
+       298a8:	491c      	ldr	r1, [pc, #112]	@ (2991c <<a href="./67fa68a7bcf103a087d72ac11f843f38.html">storage::StorageTester::executeCommand(util::command::CommandContext&, unsigned char)</a>+0x27c>)
+
+       298aa:	4668      	mov	r0, sp
+
+       298ac:	f7ea f82c 	bl	13908 <<a href="../../../../util/src/util/format/StringWriter.cpp/97429f3089d9f361a2822ba86177689e.html">util::format::StringWriter::printf(char const*, ...)</a>>
+
+    _ZN3etl7variantIJN7storage10StorageJob6Result4InitENS3_5ErrorENS3_8DataLossENS3_7SuccessEEED4Ev():
+
+       298b0:	9b09      	ldr	r3, [sp, #36]	@ 0x24
+
+       298b2:	3301      	adds	r3, #1
+
+       298b4:	d012      	beq.n	298dc <<a href="./67fa68a7bcf103a087d72ac11f843f38.html">storage::StorageTester::executeCommand(util::command::CommandContext&, unsigned char)</a>+0x23c>
+
+       298b6:	9b08      	ldr	r3, [sp, #32]
+
+       298b8:	2200      	movs	r2, #0
+
+       298ba:	4649      	mov	r1, r9
+
+       298bc:	2002      	movs	r0, #2
+
+       298be:	4798      	blx	r3
+
+    storage::StorageTester::executeCommand(util::command::CommandContext&, unsigned char):
+
+       298c0:	e00c      	b.n	298dc <<a href="./67fa68a7bcf103a087d72ac11f843f38.html">storage::StorageTester::executeCommand(util::command::CommandContext&, unsigned char)</a>+0x23c>
+
+       298c2:	4620      	mov	r0, r4
+
+       298c4:	f7ea fafa 	bl	13ebc <<a href="../../../../util/src/util/command/CommandContext.cpp/14bde16788d9f16b26aafb4d12598bec.html">util::command::CommandContext::hasToken() const</a>>
+
+       298c8:	4632      	mov	r2, r6
+
+       298ca:	4601      	mov	r1, r0
+
+       298cc:	4620      	mov	r0, r4
+
+       298ce:	f7ea fb13 	bl	13ef8 <<a href="../../../../util/src/util/command/CommandContext.cpp/b2ce40f9dd9a53ee51be5469e7a471d7.html">util::command::CommandContext::check(bool, util::command::ICommand::Result)</a>>
+
+       298d2:	bb48      	cbnz	r0, 29928 <<a href="./67fa68a7bcf103a087d72ac11f843f38.html">storage::StorageTester::executeCommand(util::command::CommandContext&, unsigned char)</a>+0x288>
+
+       298d4:	4912      	ldr	r1, [pc, #72]	@ (29920 <<a href="./67fa68a7bcf103a087d72ac11f843f38.html">storage::StorageTester::executeCommand(util::command::CommandContext&, unsigned char)</a>+0x280>)
+
+       298d6:	4668      	mov	r0, sp
+
+       298d8:	f7ea f816 	bl	13908 <<a href="../../../../util/src/util/format/StringWriter.cpp/97429f3089d9f361a2822ba86177689e.html">util::format::StringWriter::printf(char const*, ...)</a>>
+
+    _ZN3etl7variantIJN7storage10StorageJob4Type4NoneENS3_5WriteENS3_4ReadEEED4Ev():
+
+       298dc:	9b13      	ldr	r3, [sp, #76]	@ 0x4c
+
+       298de:	3301      	adds	r3, #1
+
+       298e0:	d004      	beq.n	298ec <<a href="./67fa68a7bcf103a087d72ac11f843f38.html">storage::StorageTester::executeCommand(util::command::CommandContext&, unsigned char)</a>+0x24c>
+
+       298e2:	9b12      	ldr	r3, [sp, #72]	@ 0x48
+
+       298e4:	2200      	movs	r2, #0
+
+       298e6:	a90f      	add	r1, sp, #60	@ 0x3c
+
+       298e8:	2002      	movs	r0, #2
+
+       298ea:	4798      	blx	r3
+
+    _ZN3etl7variantIJN7storage10StorageJob6Result4InitENS3_5ErrorENS3_8DataLossENS3_7SuccessEEED4Ev():
+
+       298ec:	9b0e      	ldr	r3, [sp, #56]	@ 0x38
+
+       298ee:	3301      	adds	r3, #1
+
+       298f0:	d004      	beq.n	298fc <<a href="./67fa68a7bcf103a087d72ac11f843f38.html">storage::StorageTester::executeCommand(util::command::CommandContext&, unsigned char)</a>+0x25c>
+
+       298f2:	9b0d      	ldr	r3, [sp, #52]	@ 0x34
+
+       298f4:	2200      	movs	r2, #0
+
+       298f6:	a90c      	add	r1, sp, #48	@ 0x30
+
+       298f8:	2002      	movs	r0, #2
+
+       298fa:	4798      	blx	r3
+
+    storage::StorageTester::executeCommand(util::command::CommandContext&, unsigned char):
+
+       298fc:	4668      	mov	r0, sp
+
+       298fe:	f7ea fa1d 	bl	13d3c <<a href="../../../../util/src/util/format/SharedStringWriter.cpp/75b447666d62ed8c6c384efa69c8d1d1.html">util::format::SharedStringWriter::~SharedStringWriter()</a>>
+
+       29902:	b019      	add	sp, #100	@ 0x64
+
+       29904:	e8bd 8ff0 	ldmia.w	sp!, {r4, r5, r6, r7, r8, r9, sl, fp, pc}
+
+    	...
+
+       29910:	000087a9 	.word	0x000087a9
+
+       29914:	000087b1 	.word	0x000087b1
+
+       29918:	000087c5 	.word	0x000087c5
+
+       2991c:	00034d78 	.word	0x00034d78
+
+       29920:	00034cb0 	.word	0x00034cb0
+
+       29924:	000087a5 	.word	0x000087a5
+
+       29928:	4620      	mov	r0, r4
+
+       2992a:	f7e5 fc23 	bl	f174 <<a href="../../../../util/include/util/command/CommandContext.h/41cbf6e7d93c981ba7638352d8cf0e1d.html">unsigned long util::command::CommandContext::scanIntToken<unsigned long>()</a>>
+
+       2992e:	4681      	mov	r9, r0
+
+       29930:	4620      	mov	r0, r4
+
+       29932:	f7ea fac3 	bl	13ebc <<a href="../../../../util/src/util/command/CommandContext.cpp/14bde16788d9f16b26aafb4d12598bec.html">util::command::CommandContext::hasToken() const</a>>
+
+       29936:	4632      	mov	r2, r6
+
+       29938:	4601      	mov	r1, r0
+
+       2993a:	4620      	mov	r0, r4
+
+       2993c:	f7ea fadc 	bl	13ef8 <<a href="../../../../util/src/util/command/CommandContext.cpp/b2ce40f9dd9a53ee51be5469e7a471d7.html">util::command::CommandContext::check(bool, util::command::ICommand::Result)</a>>
+
+       29940:	2800      	cmp	r0, #0
+
+       29942:	d0c7      	beq.n	298d4 <<a href="./67fa68a7bcf103a087d72ac11f843f38.html">storage::StorageTester::executeCommand(util::command::CommandContext&, unsigned char)</a>+0x234>
+
+       29944:	4620      	mov	r0, r4
+
+       29946:	f7ea fab9 	bl	13ebc <<a href="../../../../util/src/util/command/CommandContext.cpp/14bde16788d9f16b26aafb4d12598bec.html">util::command::CommandContext::hasToken() const</a>>
+
+       2994a:	4632      	mov	r2, r6
+
+       2994c:	4601      	mov	r1, r0
+
+       2994e:	4620      	mov	r0, r4
+
+       29950:	f7ea fad2 	bl	13ef8 <<a href="../../../../util/src/util/command/CommandContext.cpp/b2ce40f9dd9a53ee51be5469e7a471d7.html">util::command::CommandContext::check(bool, util::command::ICommand::Result)</a>>
+
+       29954:	2800      	cmp	r0, #0
+
+       29956:	d0bd      	beq.n	298d4 <<a href="./67fa68a7bcf103a087d72ac11f843f38.html">storage::StorageTester::executeCommand(util::command::CommandContext&, unsigned char)</a>+0x234>
+
+       29958:	4620      	mov	r0, r4
+
+       2995a:	f7e5 f813 	bl	e984 <<a href="../../../../util/include/util/command/CommandContext.h/8c091e8e2108d680275eaeb483069924.html">unsigned char util::command::CommandContext::scanIntToken<unsigned char>()</a>>
+
+       2995e:	4682      	mov	sl, r0
+
+       29960:	4620      	mov	r0, r4
+
+       29962:	f7ea faab 	bl	13ebc <<a href="../../../../util/src/util/command/CommandContext.cpp/14bde16788d9f16b26aafb4d12598bec.html">util::command::CommandContext::hasToken() const</a>>
+
+       29966:	2800      	cmp	r0, #0
+
+       29968:	f000 8081 	beq.w	29a6e <<a href="./67fa68a7bcf103a087d72ac11f843f38.html">storage::StorageTester::executeCommand(util::command::CommandContext&, unsigned char)</a>+0x3ce>
+
+       2996c:	4620      	mov	r0, r4
+
+       2996e:	f7ff fe2f 	bl	295d0 <<a href="../../../../util/include/util/command/CommandContext.h/f209b8786519599565c50e23c6065ef6.html">unsigned int util::command::CommandContext::scanIntToken<unsigned int>()</a>>
+
+       29972:	2800      	cmp	r0, #0
+
+       29974:	d07b      	beq.n	29a6e <<a href="./67fa68a7bcf103a087d72ac11f843f38.html">storage::StorageTester::executeCommand(util::command::CommandContext&, unsigned char)</a>+0x3ce>
+
+    _ZNK3etl4spanIhLj4294967295EE4sizeEv():
+
+       29976:	f8d7 b03c 	ldr.w	fp, [r7, #60]	@ 0x3c
+
+       2997a:	6c3b      	ldr	r3, [r7, #64]	@ 0x40
+
+       2997c:	eba3 030b 	sub.w	r3, r3, fp
+
+    storage::StorageTester::executeCommand(util::command::CommandContext&, unsigned char):
+
+       29980:	4298      	cmp	r0, r3
+
+       29982:	d874      	bhi.n	29a6e <<a href="./67fa68a7bcf103a087d72ac11f843f38.html">storage::StorageTester::executeCommand(util::command::CommandContext&, unsigned char)</a>+0x3ce>
+
+    _ZN3etl7mem_setIPhhEENS_9enable_ifIXaaaaaasrNS_10is_pointerIT_EE5valuentsrNS_8is_constIS4_EE5valuesrNS_11is_integralIT0_EE5valueeqstS9_Li1EES4_E4typeES4_jS9_():
+
+       29984:	4651      	mov	r1, sl
+
+       29986:	4602      	mov	r2, r0
+
+    _ZNK3etl4spanIhLj4294967295EE5firstEj():
+
+       29988:	eb0b 0400 	add.w	r4, fp, r0
+
+    _ZN3etl7mem_setIPhhEENS_9enable_ifIXaaaaaasrNS_10is_pointerIT_EE5valuentsrNS_8is_constIS4_EE5valuesrNS_11is_integralIT0_EE5valueeqstS9_Li1EES4_E4typeES4_jS9_():
+
+       2998c:	4658      	mov	r0, fp
+
+       2998e:	f7d6 fe14 	bl	5ba <<a href="../../../../../../../../../../../unknown/unknown/716af30655f8f3d9b32750dca746ddfb.html">memset</a>>
+
+    _ZN3etl4spanIKhLj4294967295EEC4ERKS2_():
+
+       29992:	f107 030c 	add.w	r3, r7, #12
+
+       29996:	e893 0003 	ldmia.w	r3, {r0, r1}
+
+    _ZN3etl7variantIJN7storage10StorageJob6Result4InitENS3_5ErrorENS3_8DataLossENS3_7SuccessEEEaSIS4_Li0EEERS8_OT_():
+
+       2999a:	9b0e      	ldr	r3, [sp, #56]	@ 0x38
+
+    _ZN7storage10StorageJob4initEmN3etl8delegateIFvRS0_EEE():
+
+       2999c:	f8cd 9058 	str.w	r9, [sp, #88]	@ 0x58
+
+    _ZN3etl7variantIJN7storage10StorageJob6Result4InitENS3_5ErrorENS3_8DataLossENS3_7SuccessEEEaSIS4_Li0EEERS8_OT_():
+
+       299a0:	3301      	adds	r3, #1
+
+       299a2:	f10d 091c 	add.w	r9, sp, #28
+
+    _ZN3etl4spanIKhLj4294967295EEC4ERKS2_():
+
+       299a6:	e9cd b404 	strd	fp, r4, [sp, #16]
+
+       299aa:	e889 0003 	stmia.w	r9, {r0, r1}
+
+    _ZN4util6buffer12LinkedBufferIKhEC4EN3etl4spanIS2_Lj4294967295EEEPS3_():
+
+       299ae:	9506      	str	r5, [sp, #24]
+
+    _ZN3etl7variantIJN7storage10StorageJob6Result4InitENS3_5ErrorENS3_8DataLossENS3_7SuccessEEEaSIS4_Li0EEERS8_OT_():
+
+       299b0:	d004      	beq.n	299bc <<a href="./67fa68a7bcf103a087d72ac11f843f38.html">storage::StorageTester::executeCommand(util::command::CommandContext&, unsigned char)</a>+0x31c>
+
+       299b2:	9b0d      	ldr	r3, [sp, #52]	@ 0x34
+
+       299b4:	462a      	mov	r2, r5
+
+       299b6:	4630      	mov	r0, r6
+
+       299b8:	a90c      	add	r1, sp, #48	@ 0x30
+
+       299ba:	4798      	blx	r3
+
+    _ZN7storage10StorageJob4initEmN3etl8delegateIFvRS0_EEE():
+
+       299bc:	e899 0003 	ldmia.w	r9, {r0, r1}
+
+    _ZN3etl7variantIJN7storage10StorageJob4Type4NoneENS3_5WriteENS3_4ReadEEE7emplaceIS5_JRN4util6buffer12LinkedBufferIKhEERKjEEERT_DpOT0_():
+
+       299c0:	9c13      	ldr	r4, [sp, #76]	@ 0x4c
+
+    _ZN3etl7variantIJN7storage10StorageJob6Result4InitENS3_5ErrorENS3_8DataLossENS3_7SuccessEEEaSIS4_Li0EEERS8_OT_():
+
+       299c2:	f8cd 8034 	str.w	r8, [sp, #52]	@ 0x34
+
+       299c6:	2200      	movs	r2, #0
+
+    _ZN7storage10StorageJob4initEmN3etl8delegateIFvRS0_EEE():
+
+       299c8:	ab14      	add	r3, sp, #80	@ 0x50
+
+    _ZN3etl7variantIJN7storage10StorageJob4Type4NoneENS3_5WriteENS3_4ReadEEE7emplaceIS5_JRN4util6buffer12LinkedBufferIKhEERKjEEERT_DpOT0_():
+
+       299ca:	3401      	adds	r4, #1
+
+    _ZN7storage10StorageJob4initEmN3etl8delegateIFvRS0_EEE():
+
+       299cc:	e883 0003 	stmia.w	r3, {r0, r1}
+
+    _ZN3etl7variantIJN7storage10StorageJob6Result4InitENS3_5ErrorENS3_8DataLossENS3_7SuccessEEEaSIS4_Li0EEERS8_OT_():
+
+       299d0:	920e      	str	r2, [sp, #56]	@ 0x38
+
+    _ZN3etl7variantIJN7storage10StorageJob4Type4NoneENS3_5WriteENS3_4ReadEEE7emplaceIS5_JRN4util6buffer12LinkedBufferIKhEERKjEEERT_DpOT0_():
+
+       299d2:	d003      	beq.n	299dc <<a href="./67fa68a7bcf103a087d72ac11f843f38.html">storage::StorageTester::executeCommand(util::command::CommandContext&, unsigned char)</a>+0x33c>
+
+       299d4:	9b12      	ldr	r3, [sp, #72]	@ 0x48
+
+       299d6:	a90f      	add	r1, sp, #60	@ 0x3c
+
+       299d8:	2002      	movs	r0, #2
+
+       299da:	4798      	blx	r3
+
+    storage::StorageTester::executeCommand(util::command::CommandContext&, unsigned char):
+
+       299dc:	68b8      	ldr	r0, [r7, #8]
+
+    _ZN3etl7variantIJN7storage10StorageJob4Type4NoneENS3_5WriteENS3_4ReadEEE7emplaceIS5_JRN4util6buffer12LinkedBufferIKhEERKjEEERT_DpOT0_():
+
+       299de:	4b5c      	ldr	r3, [pc, #368]	@ (29b50 <<a href="./67fa68a7bcf103a087d72ac11f843f38.html">storage::StorageTester::executeCommand(util::command::CommandContext&, unsigned char)</a>+0x4b0>)
+
+       299e0:	9312      	str	r3, [sp, #72]	@ 0x48
+
+       299e2:	2301      	movs	r3, #1
+
+    _ZN7storage10StorageJob4Type5WriteC4ERN4util6buffer12LinkedBufferIKhEEj():
+
+       299e4:	aa04      	add	r2, sp, #16
+
+    _ZN3etl7variantIJN7storage10StorageJob4Type4NoneENS3_5WriteENS3_4ReadEEE7emplaceIS5_JRN4util6buffer12LinkedBufferIKhEERKjEEERT_DpOT0_():
+
+       299e6:	9313      	str	r3, [sp, #76]	@ 0x4c
+
+    storage::StorageTester::executeCommand(util::command::CommandContext&, unsigned char):
+
+       299e8:	6803      	ldr	r3, [r0, #0]
+
+    _ZN7storage10StorageJob4Type5WriteC4ERN4util6buffer12LinkedBufferIKhEEj():
+
+       299ea:	920f      	str	r2, [sp, #60]	@ 0x3c
+
+       299ec:	2200      	movs	r2, #0
+
+    storage::StorageTester::executeCommand(util::command::CommandContext&, unsigned char):
+
+       299ee:	681b      	ldr	r3, [r3, #0]
+
+    _ZN7storage10StorageJob4Type5WriteC4ERN4util6buffer12LinkedBufferIKhEEj():
+
+       299f0:	9210      	str	r2, [sp, #64]	@ 0x40
+
+    storage::StorageTester::executeCommand(util::command::CommandContext&, unsigned char):
+
+       299f2:	a90a      	add	r1, sp, #40	@ 0x28
+
+       299f4:	4798      	blx	r3
+
+       299f6:	f107 0014 	add.w	r0, r7, #20
+
+       299fa:	f005 faa3 	bl	2ef44 <<a href="../../../../asyncFreeRtos/src/async/FutureSupport.cpp/748682a52e2520d2db38b4eee4f703b8.html">async::FutureSupport::wait()</a>>
+
+    _ZNK3etl7variantIJN7storage10StorageJob6Result4InitENS3_5ErrorENS3_8DataLossENS3_7SuccessEEE5indexEv():
+
+       299fe:	9a0e      	ldr	r2, [sp, #56]	@ 0x38
+
+    _ZN3etl15private_variant15is_same_type_inIN7storage10StorageJob6Result7SuccessENS4_4InitENS4_5ErrorEJNS4_8DataLossES5_EEENS_9enable_ifIXntsrNS_7is_sameIT_T0_EE5valueEbE4typeEj():
+
+       29a00:	2a00      	cmp	r2, #0
+
+       29a02:	f000 808d 	beq.w	29b20 <<a href="./67fa68a7bcf103a087d72ac11f843f38.html">storage::StorageTester::executeCommand(util::command::CommandContext&, unsigned char)</a>+0x480>
+
+    _ZN3etl15private_variant15is_same_type_inIN7storage10StorageJob6Result7SuccessENS4_5ErrorENS4_8DataLossEJS5_EEENS_9enable_ifIXntsrNS_7is_sameIT_T0_EE5valueEbE4typeEj():
+
+       29a06:	2a01      	cmp	r2, #1
+
+       29a08:	f000 808a 	beq.w	29b20 <<a href="./67fa68a7bcf103a087d72ac11f843f38.html">storage::StorageTester::executeCommand(util::command::CommandContext&, unsigned char)</a>+0x480>
+
+    _ZN3etl15private_variant15is_same_type_inIN7storage10StorageJob4Type4ReadENS4_5WriteES5_JEEENS_9enable_ifIXntsrNS_7is_sameIT_T0_EE5valueEbE4typeEj():
+
+       29a0c:	1e93      	subs	r3, r2, #2
+
+       29a0e:	f000 8099 	beq.w	29b44 <<a href="./67fa68a7bcf103a087d72ac11f843f38.html">storage::StorageTester::executeCommand(util::command::CommandContext&, unsigned char)</a>+0x4a4>
+
+    storage::StorageTester::executeCommand(util::command::CommandContext&, unsigned char):
+
+       29a12:	2b01      	cmp	r3, #1
+
+       29a14:	f000 8091 	beq.w	29b3a <<a href="./67fa68a7bcf103a087d72ac11f843f38.html">storage::StorageTester::executeCommand(util::command::CommandContext&, unsigned char)</a>+0x49a>
+
+    _ZN3etl7variantIJN7storage10StorageJob6Result4InitENS3_5ErrorENS3_8DataLossENS3_7SuccessEEEC4ERKS8_():
+
+       29a18:	9b0d      	ldr	r3, [sp, #52]	@ 0x34
+
+       29a1a:	9308      	str	r3, [sp, #32]
+
+       29a1c:	1c50      	adds	r0, r2, #1
+
+       29a1e:	9209      	str	r2, [sp, #36]	@ 0x24
+
+       29a20:	f040 8081 	bne.w	29b26 <<a href="./67fa68a7bcf103a087d72ac11f843f38.html">storage::StorageTester::executeCommand(util::command::CommandContext&, unsigned char)</a>+0x486>
+
+    storage::StorageTester::executeCommand(util::command::CommandContext&, unsigned char):
+
+       29a24:	494b      	ldr	r1, [pc, #300]	@ (29b54 <<a href="./67fa68a7bcf103a087d72ac11f843f38.html">storage::StorageTester::executeCommand(util::command::CommandContext&, unsigned char)</a>+0x4b4>)
+
+       29a26:	e012      	b.n	29a4e <<a href="./67fa68a7bcf103a087d72ac11f843f38.html">storage::StorageTester::executeCommand(util::command::CommandContext&, unsigned char)</a>+0x3ae>
+
+       29a28:	494b      	ldr	r1, [pc, #300]	@ (29b58 <<a href="./67fa68a7bcf103a087d72ac11f843f38.html">storage::StorageTester::executeCommand(util::command::CommandContext&, unsigned char)</a>+0x4b8>)
+
+       29a2a:	4668      	mov	r0, sp
+
+       29a2c:	f7e9 ff6c 	bl	13908 <<a href="../../../../util/src/util/format/StringWriter.cpp/97429f3089d9f361a2822ba86177689e.html">util::format::StringWriter::printf(char const*, ...)</a>>
+
+       29a30:	e754      	b.n	298dc <<a href="./67fa68a7bcf103a087d72ac11f843f38.html">storage::StorageTester::executeCommand(util::command::CommandContext&, unsigned char)</a>+0x23c>
+
+       29a32:	494a      	ldr	r1, [pc, #296]	@ (29b5c <<a href="./67fa68a7bcf103a087d72ac11f843f38.html">storage::StorageTester::executeCommand(util::command::CommandContext&, unsigned char)</a>+0x4bc>)
+
+       29a34:	4668      	mov	r0, sp
+
+       29a36:	f7e9 ff67 	bl	13908 <<a href="../../../../util/src/util/format/StringWriter.cpp/97429f3089d9f361a2822ba86177689e.html">util::format::StringWriter::printf(char const*, ...)</a>>
+
+       29a3a:	e74f      	b.n	298dc <<a href="./67fa68a7bcf103a087d72ac11f843f38.html">storage::StorageTester::executeCommand(util::command::CommandContext&, unsigned char)</a>+0x23c>
+
+    _ZN3etl7variantIJN7storage10StorageJob6Result4InitENS3_5ErrorENS3_8DataLossENS3_7SuccessEEEC4ERKS8_():
+
+       29a3c:	9b0d      	ldr	r3, [sp, #52]	@ 0x34
+
+       29a3e:	9308      	str	r3, [sp, #32]
+
+       29a40:	9209      	str	r2, [sp, #36]	@ 0x24
+
+       29a42:	aa0c      	add	r2, sp, #48	@ 0x30
+
+       29a44:	4649      	mov	r1, r9
+
+       29a46:	2000      	movs	r0, #0
+
+       29a48:	4798      	blx	r3
+
+    _ZNK3etl7variantIJN7storage10StorageJob6Result4InitENS3_5ErrorENS3_8DataLossENS3_7SuccessEEE5indexEv():
+
+       29a4a:	9a09      	ldr	r2, [sp, #36]	@ 0x24
+
+    storage::StorageTester::executeCommand(util::command::CommandContext&, unsigned char):
+
+       29a4c:	4944      	ldr	r1, [pc, #272]	@ (29b60 <<a href="./67fa68a7bcf103a087d72ac11f843f38.html">storage::StorageTester::executeCommand(util::command::CommandContext&, unsigned char)</a>+0x4c0>)
+
+       29a4e:	4668      	mov	r0, sp
+
+       29a50:	f7e9 ff5a 	bl	13908 <<a href="../../../../util/src/util/format/StringWriter.cpp/97429f3089d9f361a2822ba86177689e.html">util::format::StringWriter::printf(char const*, ...)</a>>
+
+    _ZN3etl7variantIJN7storage10StorageJob6Result4InitENS3_5ErrorENS3_8DataLossENS3_7SuccessEEED4Ev():
+
+       29a54:	9b09      	ldr	r3, [sp, #36]	@ 0x24
+
+       29a56:	3301      	adds	r3, #1
+
+       29a58:	d004      	beq.n	29a64 <<a href="./67fa68a7bcf103a087d72ac11f843f38.html">storage::StorageTester::executeCommand(util::command::CommandContext&, unsigned char)</a>+0x3c4>
+
+       29a5a:	9b08      	ldr	r3, [sp, #32]
+
+       29a5c:	2200      	movs	r2, #0
+
+       29a5e:	4649      	mov	r1, r9
+
+       29a60:	2002      	movs	r0, #2
+
+       29a62:	4798      	blx	r3
+
+    _ZNK3etl7variantIJN7storage10StorageJob4Type4NoneENS3_5WriteENS3_4ReadEEE22valueless_by_exceptionEv():
+
+       29a64:	9b13      	ldr	r3, [sp, #76]	@ 0x4c
+
+    _ZN3etl7variantIJN7storage10StorageJob4Type4NoneENS3_5WriteENS3_4ReadEEED4Ev():
+
+       29a66:	3301      	adds	r3, #1
+
+       29a68:	f43f af40 	beq.w	298ec <<a href="./67fa68a7bcf103a087d72ac11f843f38.html">storage::StorageTester::executeCommand(util::command::CommandContext&, unsigned char)</a>+0x24c>
+
+       29a6c:	e739      	b.n	298e2 <<a href="./67fa68a7bcf103a087d72ac11f843f38.html">storage::StorageTester::executeCommand(util::command::CommandContext&, unsigned char)</a>+0x242>
+
+    storage::StorageTester::executeCommand(util::command::CommandContext&, unsigned char):
+
+       29a6e:	493d      	ldr	r1, [pc, #244]	@ (29b64 <<a href="./67fa68a7bcf103a087d72ac11f843f38.html">storage::StorageTester::executeCommand(util::command::CommandContext&, unsigned char)</a>+0x4c4>)
+
+       29a70:	4668      	mov	r0, sp
+
+       29a72:	f7e9 ff49 	bl	13908 <<a href="../../../../util/src/util/format/StringWriter.cpp/97429f3089d9f361a2822ba86177689e.html">util::format::StringWriter::printf(char const*, ...)</a>>
+
+       29a76:	e731      	b.n	298dc <<a href="./67fa68a7bcf103a087d72ac11f843f38.html">storage::StorageTester::executeCommand(util::command::CommandContext&, unsigned char)</a>+0x23c>
+
+       29a78:	493b      	ldr	r1, [pc, #236]	@ (29b68 <<a href="./67fa68a7bcf103a087d72ac11f843f38.html">storage::StorageTester::executeCommand(util::command::CommandContext&, unsigned char)</a>+0x4c8>)
+
+       29a7a:	4668      	mov	r0, sp
+
+       29a7c:	f7e9 ff44 	bl	13908 <<a href="../../../../util/src/util/format/StringWriter.cpp/97429f3089d9f361a2822ba86177689e.html">util::format::StringWriter::printf(char const*, ...)</a>>
+
+       29a80:	e72c      	b.n	298dc <<a href="./67fa68a7bcf103a087d72ac11f843f38.html">storage::StorageTester::executeCommand(util::command::CommandContext&, unsigned char)</a>+0x23c>
+
+       29a82:	4620      	mov	r0, r4
+
+       29a84:	f7ff fda4 	bl	295d0 <<a href="../../../../util/include/util/command/CommandContext.h/f209b8786519599565c50e23c6065ef6.html">unsigned int util::command::CommandContext::scanIntToken<unsigned int>()</a>>
+
+       29a88:	4605      	mov	r5, r0
+
+       29a8a:	e6b2      	b.n	297f2 <<a href="./67fa68a7bcf103a087d72ac11f843f38.html">storage::StorageTester::executeCommand(util::command::CommandContext&, unsigned char)</a>+0x152>
+
+    _ZN3etl7variantIJN7storage10StorageJob6Result4InitENS3_5ErrorENS3_8DataLossENS3_7SuccessEEEC4ERKS8_():
+
+       29a8c:	9b0d      	ldr	r3, [sp, #52]	@ 0x34
+
+       29a8e:	9308      	str	r3, [sp, #32]
+
+       29a90:	9209      	str	r2, [sp, #36]	@ 0x24
+
+       29a92:	aa0c      	add	r2, sp, #48	@ 0x30
+
+       29a94:	4649      	mov	r1, r9
+
+       29a96:	2000      	movs	r0, #0
+
+       29a98:	4798      	blx	r3
+
+    _ZNK3etl7variantIJN7storage10StorageJob6Result4InitENS3_5ErrorENS3_8DataLossENS3_7SuccessEEE5indexEv():
+
+       29a9a:	9a09      	ldr	r2, [sp, #36]	@ 0x24
+
+       29a9c:	e704      	b.n	298a8 <<a href="./67fa68a7bcf103a087d72ac11f843f38.html">storage::StorageTester::executeCommand(util::command::CommandContext&, unsigned char)</a>+0x208>
+
+    storage::StorageTester::executeCommand(util::command::CommandContext&, unsigned char):
+
+       29a9e:	4933      	ldr	r1, [pc, #204]	@ (29b6c <<a href="./67fa68a7bcf103a087d72ac11f843f38.html">storage::StorageTester::executeCommand(util::command::CommandContext&, unsigned char)</a>+0x4cc>)
+
+       29aa0:	4668      	mov	r0, sp
+
+       29aa2:	f7e9 ff31 	bl	13908 <<a href="../../../../util/src/util/format/StringWriter.cpp/97429f3089d9f361a2822ba86177689e.html">util::format::StringWriter::printf(char const*, ...)</a>>
+
+       29aa6:	e7dd      	b.n	29a64 <<a href="./67fa68a7bcf103a087d72ac11f843f38.html">storage::StorageTester::executeCommand(util::command::CommandContext&, unsigned char)</a>+0x3c4>
+
+    _ZN3etl15private_variant15is_same_type_inIN7storage10StorageJob4Type4ReadENS4_4NoneENS4_5WriteEJS5_EEENS_9enable_ifIXntsrNS_7is_sameIT_T0_EE5valueEbE4typeEj():
+
+       29aa8:	9b13      	ldr	r3, [sp, #76]	@ 0x4c
+
+       29aaa:	2b02      	cmp	r3, #2
+
+       29aac:	d003      	beq.n	29ab6 <<a href="./67fa68a7bcf103a087d72ac11f843f38.html">storage::StorageTester::executeCommand(util::command::CommandContext&, unsigned char)</a>+0x416>
+
+    _ZN3etl3getIN7storage10StorageJob4Type4ReadEJNS3_4NoneENS3_5WriteES4_EEERT_RNS_7variantIJDpT0_EEE():
+
+       29aae:	4b30      	ldr	r3, [pc, #192]	@ (29b70 <<a href="./67fa68a7bcf103a087d72ac11f843f38.html">storage::StorageTester::executeCommand(util::command::CommandContext&, unsigned char)</a>+0x4d0>)
+
+       29ab0:	4648      	mov	r0, r9
+
+       29ab2:	681b      	ldr	r3, [r3, #0]
+
+       29ab4:	4798      	blx	r3
+
+    storage::StorageTester::executeCommand(util::command::CommandContext&, unsigned char):
+
+       29ab6:	9a11      	ldr	r2, [sp, #68]	@ 0x44
+
+       29ab8:	492e      	ldr	r1, [pc, #184]	@ (29b74 <<a href="./67fa68a7bcf103a087d72ac11f843f38.html">storage::StorageTester::executeCommand(util::command::CommandContext&, unsigned char)</a>+0x4d4>)
+
+       29aba:	4668      	mov	r0, sp
+
+       29abc:	f7e9 ff24 	bl	13908 <<a href="../../../../util/src/util/format/StringWriter.cpp/97429f3089d9f361a2822ba86177689e.html">util::format::StringWriter::printf(char const*, ...)</a>>
+
+       29ac0:	4627      	mov	r7, r4
+
+    printData():
+
+       29ac2:	2600      	movs	r6, #0
+
+       29ac4:	492c      	ldr	r1, [pc, #176]	@ (29b78 <<a href="./67fa68a7bcf103a087d72ac11f843f38.html">storage::StorageTester::executeCommand(util::command::CommandContext&, unsigned char)</a>+0x4d8>)
+
+       29ac6:	4632      	mov	r2, r6
+
+       29ac8:	4668      	mov	r0, sp
+
+       29aca:	f7e9 ff1d 	bl	13908 <<a href="../../../../util/src/util/format/StringWriter.cpp/97429f3089d9f361a2822ba86177689e.html">util::format::StringWriter::printf(char const*, ...)</a>>
+
+       29ace:	2400      	movs	r4, #0
+
+       29ad0:	e001      	b.n	29ad6 <<a href="./67fa68a7bcf103a087d72ac11f843f38.html">storage::StorageTester::executeCommand(util::command::CommandContext&, unsigned char)</a>+0x436>
+
+       29ad2:	2c20      	cmp	r4, #32
+
+       29ad4:	d00b      	beq.n	29aee <<a href="./67fa68a7bcf103a087d72ac11f843f38.html">storage::StorageTester::executeCommand(util::command::CommandContext&, unsigned char)</a>+0x44e>
+
+       29ad6:	1933      	adds	r3, r6, r4
+
+       29ad8:	429d      	cmp	r5, r3
+
+       29ada:	d816      	bhi.n	29b0a <<a href="./67fa68a7bcf103a087d72ac11f843f38.html">storage::StorageTester::executeCommand(util::command::CommandContext&, unsigned char)</a>+0x46a>
+
+       29adc:	3401      	adds	r4, #1
+
+       29ade:	07a3      	lsls	r3, r4, #30
+
+       29ae0:	d1f7      	bne.n	29ad2 <<a href="./67fa68a7bcf103a087d72ac11f843f38.html">storage::StorageTester::executeCommand(util::command::CommandContext&, unsigned char)</a>+0x432>
+
+       29ae2:	4926      	ldr	r1, [pc, #152]	@ (29b7c <<a href="./67fa68a7bcf103a087d72ac11f843f38.html">storage::StorageTester::executeCommand(util::command::CommandContext&, unsigned char)</a>+0x4dc>)
+
+       29ae4:	4668      	mov	r0, sp
+
+       29ae6:	f7e9 ff0f 	bl	13908 <<a href="../../../../util/src/util/format/StringWriter.cpp/97429f3089d9f361a2822ba86177689e.html">util::format::StringWriter::printf(char const*, ...)</a>>
+
+       29aea:	2c20      	cmp	r4, #32
+
+       29aec:	d1f3      	bne.n	29ad6 <<a href="./67fa68a7bcf103a087d72ac11f843f38.html">storage::StorageTester::executeCommand(util::command::CommandContext&, unsigned char)</a>+0x436>
+
+       29aee:	4924      	ldr	r1, [pc, #144]	@ (29b80 <<a href="./67fa68a7bcf103a087d72ac11f843f38.html">storage::StorageTester::executeCommand(util::command::CommandContext&, unsigned char)</a>+0x4e0>)
+
+       29af0:	4668      	mov	r0, sp
+
+       29af2:	3620      	adds	r6, #32
+
+       29af4:	f7e9 ff08 	bl	13908 <<a href="../../../../util/src/util/format/StringWriter.cpp/97429f3089d9f361a2822ba86177689e.html">util::format::StringWriter::printf(char const*, ...)</a>>
+
+       29af8:	42b5      	cmp	r5, r6
+
+       29afa:	f107 0720 	add.w	r7, r7, #32
+
+       29afe:	d8e1      	bhi.n	29ac4 <<a href="./67fa68a7bcf103a087d72ac11f843f38.html">storage::StorageTester::executeCommand(util::command::CommandContext&, unsigned char)</a>+0x424>
+
+       29b00:	491f      	ldr	r1, [pc, #124]	@ (29b80 <<a href="./67fa68a7bcf103a087d72ac11f843f38.html">storage::StorageTester::executeCommand(util::command::CommandContext&, unsigned char)</a>+0x4e0>)
+
+       29b02:	4668      	mov	r0, sp
+
+       29b04:	f7e9 ff00 	bl	13908 <<a href="../../../../util/src/util/format/StringWriter.cpp/97429f3089d9f361a2822ba86177689e.html">util::format::StringWriter::printf(char const*, ...)</a>>
+
+       29b08:	e7ac      	b.n	29a64 <<a href="./67fa68a7bcf103a087d72ac11f843f38.html">storage::StorageTester::executeCommand(util::command::CommandContext&, unsigned char)</a>+0x3c4>
+
+       29b0a:	5d3a      	ldrb	r2, [r7, r4]
+
+       29b0c:	491d      	ldr	r1, [pc, #116]	@ (29b84 <<a href="./67fa68a7bcf103a087d72ac11f843f38.html">storage::StorageTester::executeCommand(util::command::CommandContext&, unsigned char)</a>+0x4e4>)
+
+       29b0e:	4668      	mov	r0, sp
+
+       29b10:	f7e9 fefa 	bl	13908 <<a href="../../../../util/src/util/format/StringWriter.cpp/97429f3089d9f361a2822ba86177689e.html">util::format::StringWriter::printf(char const*, ...)</a>>
+
+       29b14:	e7e2      	b.n	29adc <<a href="./67fa68a7bcf103a087d72ac11f843f38.html">storage::StorageTester::executeCommand(util::command::CommandContext&, unsigned char)</a>+0x43c>
+
+    _ZN3etl7variantIJN7storage10StorageJob6Result4InitENS3_5ErrorENS3_8DataLossENS3_7SuccessEEEC4ERKS8_():
+
+       29b16:	9b0d      	ldr	r3, [sp, #52]	@ 0x34
+
+       29b18:	9308      	str	r3, [sp, #32]
+
+       29b1a:	2202      	movs	r2, #2
+
+       29b1c:	9209      	str	r2, [sp, #36]	@ 0x24
+
+    _ZNK3etl7variantIJN7storage10StorageJob6Result4InitENS3_5ErrorENS3_8DataLossENS3_7SuccessEEE22valueless_by_exceptionEv():
+
+       29b1e:	e790      	b.n	29a42 <<a href="./67fa68a7bcf103a087d72ac11f843f38.html">storage::StorageTester::executeCommand(util::command::CommandContext&, unsigned char)</a>+0x3a2>
+
+    _ZN3etl7variantIJN7storage10StorageJob6Result4InitENS3_5ErrorENS3_8DataLossENS3_7SuccessEEEC4ERKS8_():
+
+       29b20:	9b0d      	ldr	r3, [sp, #52]	@ 0x34
+
+       29b22:	9308      	str	r3, [sp, #32]
+
+       29b24:	9209      	str	r2, [sp, #36]	@ 0x24
+
+       29b26:	aa0c      	add	r2, sp, #48	@ 0x30
+
+       29b28:	4649      	mov	r1, r9
+
+       29b2a:	2000      	movs	r0, #0
+
+       29b2c:	4798      	blx	r3
+
+    _ZNK3etl7variantIJN7storage10StorageJob6Result4InitENS3_5ErrorENS3_8DataLossENS3_7SuccessEEE5indexEv():
+
+       29b2e:	9a09      	ldr	r2, [sp, #36]	@ 0x24
+
+       29b30:	e778      	b.n	29a24 <<a href="./67fa68a7bcf103a087d72ac11f843f38.html">storage::StorageTester::executeCommand(util::command::CommandContext&, unsigned char)</a>+0x384>
+
+    _ZN3etl7variantIJN7storage10StorageJob6Result4InitENS3_5ErrorENS3_8DataLossENS3_7SuccessEEEC4ERKS8_():
+
+       29b32:	9b0d      	ldr	r3, [sp, #52]	@ 0x34
+
+       29b34:	9308      	str	r3, [sp, #32]
+
+       29b36:	9609      	str	r6, [sp, #36]	@ 0x24
+
+    _ZNK3etl7variantIJN7storage10StorageJob6Result4InitENS3_5ErrorENS3_8DataLossENS3_7SuccessEEE22valueless_by_exceptionEv():
+
+       29b38:	e7ab      	b.n	29a92 <<a href="./67fa68a7bcf103a087d72ac11f843f38.html">storage::StorageTester::executeCommand(util::command::CommandContext&, unsigned char)</a>+0x3f2>
+
+    storage::StorageTester::executeCommand(util::command::CommandContext&, unsigned char):
+
+       29b3a:	4913      	ldr	r1, [pc, #76]	@ (29b88 <<a href="./67fa68a7bcf103a087d72ac11f843f38.html">storage::StorageTester::executeCommand(util::command::CommandContext&, unsigned char)</a>+0x4e8>)
+
+       29b3c:	4668      	mov	r0, sp
+
+       29b3e:	f7e9 fee3 	bl	13908 <<a href="../../../../util/src/util/format/StringWriter.cpp/97429f3089d9f361a2822ba86177689e.html">util::format::StringWriter::printf(char const*, ...)</a>>
+
+       29b42:	e78f      	b.n	29a64 <<a href="./67fa68a7bcf103a087d72ac11f843f38.html">storage::StorageTester::executeCommand(util::command::CommandContext&, unsigned char)</a>+0x3c4>
+
+    _ZN3etl7variantIJN7storage10StorageJob6Result4InitENS3_5ErrorENS3_8DataLossENS3_7SuccessEEEC4ERKS8_():
+
+       29b44:	9b0d      	ldr	r3, [sp, #52]	@ 0x34
+
+       29b46:	9308      	str	r3, [sp, #32]
+
+       29b48:	2202      	movs	r2, #2
+
+       29b4a:	9209      	str	r2, [sp, #36]	@ 0x24
+
+    _ZNK3etl7variantIJN7storage10StorageJob6Result4InitENS3_5ErrorENS3_8DataLossENS3_7SuccessEEE22valueless_by_exceptionEv():
+
+       29b4c:	e7eb      	b.n	29b26 <<a href="./67fa68a7bcf103a087d72ac11f843f38.html">storage::StorageTester::executeCommand(util::command::CommandContext&, unsigned char)</a>+0x486>
+
+       29b4e:	bf00      	nop
+
+       29b50:	000087b1 	.word	0x000087b1
+
+       29b54:	00034d0c 	.word	0x00034d0c
+
+       29b58:	00034c5c 	.word	0x00034c5c
+
+       29b5c:	00034d20 	.word	0x00034d20
+
+       29b60:	00034c98 	.word	0x00034c98
+
+       29b64:	00034ce4 	.word	0x00034ce4
+
+       29b68:	00034d5c 	.word	0x00034d5c
+
+       29b6c:	00034c88 	.word	0x00034c88
+
+       29b70:	1ffe0120 	.word	0x1ffe0120
+
+       29b74:	00034d90 	.word	0x00034d90
+
+       29b78:	00034db0 	.word	0x00034db0
+
+       29b7c:	00035308 	.word	0x00035308
+
+       29b80:	00035330 	.word	0x00035330
+
+       29b84:	00034db8 	.word	0x00034db8
+
+       29b88:	00034d00 	.word	0x00034d00
+
+    </pre>
+
+    
+
+    
+        <h1>Stack Worst-Case Scenarios</h1>
+        
+        <table class="table table-bordered table-hover table-condensed">
+        <thead>
+            <tr>
+                <th rowspan="2">#</th>
+                <th colspan="2" style="text-align: center">Stack</th>
+                <th colspan="2" style="text-align: center">Code</th>
+                <th rowspan="2" width="100%">Name</th>
+            </tr>
+            <tr>
+                <th class="col_size">&sum; = 388</th>
+                <th class="col_size"></th>
+                <th class="col_size">&sum;= 1,264</th>
+                <th class="col_size"></th>
+            </tr>
+        </thead>
+        <tbody>
+        
+            <tr>
+                <th>1</th>
+                <td class="col_size">
+                    
+                    388
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                24 
+            
+                </td>
+                <td class="col_size">
+                    
+                    
+                    1,264
+                    
+                    
+                </td>
+                <td class="col_size">432</td>
+                <td><a href="../../../../util/src/util/format/PrintfFormatter.cpp/4aadf02dd7dcf4f301c4d79e66b22e38.html" class="icon-function">util::format::PrintfFormatter::formatIntDatatype(char*, util::format::ParamInfo const&amp;, util::format::ParamVariant const&amp;, signed char&amp;)</a></td>
+            </tr>
+        
+            <tr>
+                <th>2</th>
+                <td class="col_size">
+                    
+                    364
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                96 
+            
+                </td>
+                <td class="col_size">
+                    
+                    
+                    832
+                    
+                    
+                </td>
+                <td class="col_size">436</td>
+                <td><a href="../../../../util/src/util/format/PrintfFormatter.cpp/a55fbe8aa7abfc498675bef9f2e3bbf3.html" class="icon-function">util::format::PrintfFormatter::formatIntParam(util::format::ParamInfo const&amp;, util::format::ParamVariant const&amp;)</a></td>
+            </tr>
+        
+            <tr>
+                <th>3</th>
+                <td class="col_size">
+                    
+                    268
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                32 
+            
+                </td>
+                <td class="col_size">
+                    
+                    
+                    396
+                    
+                    
+                </td>
+                <td class="col_size">144</td>
+                <td><a href="../../../../util/src/util/format/PrintfFormatter.cpp/1fd658a3cadf7a6a384e16e0b788aef4.html" class="icon-function">util::format::PrintfFormatter::formatParam(util::format::ParamInfo const&amp;, util::format::ParamVariant const&amp;)</a></td>
+            </tr>
+        
+            <tr>
+                <th>4</th>
+                <td class="col_size">
+                    
+                    236
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                56 
+            
+                </td>
+                <td class="col_size">
+                    
+                    
+                    252
+                    
+                    
+                </td>
+                <td class="col_size">192</td>
+                <td><a href="../../../../util/src/util/format/PrintfFormatter.cpp/54d7602074146c5884ce6c1e97059b8b.html" class="icon-function">util::format::PrintfFormatter::format(char const*, util::format::IPrintfArgumentReader&amp;)</a></td>
+            </tr>
+        
+            <tr>
+                <th>5</th>
+                <td class="col_size">
+                    
+                    180
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                44 
+            
+                </td>
+                <td class="col_size">
+                    
+                </td>
+                <td class="col_size">60</td>
+                <td><a href="../../../../util/src/util/format/StringWriter.cpp/97429f3089d9f361a2822ba86177689e.html" class="icon-function">util::format::StringWriter::printf(char const*, ...)</a></td>
+            </tr>
+        
+        </tbody>
+        
+        <tfoot>
+            <tr>
+                <th></th>
+                <th class="col_size">136
+                </th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+            </tr>
+        </tfoot>
+        
+    </table>
+        
+        
+            <p>No callers for this function.</p>
+        
+    
+
+
+        </div>
+    <div id="page-footer">
+        <hr>
+        
+            brought to you with 💖
+            by <a href="https://twitter.com/hbehrens">Heiko Behrens</a>
+            <span class="secondary">– MIT license, copyright © 2014-2026</span>
+        
+    </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,321 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../../../../../../../../../../../static/css/style.css" />
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <title>Symbol - puncover</title>
+    
+</head>
+<body>
+    <div class="container" id="content">
+        <div class="page-header">
+            <nav class="navbar navbar-default" role="navigation">
+              <div class="container-fluid">
+                <div class="navbar-header">
+                  <a class="navbar-brand" href="../../../../../../../../../../../../index.html">
+                    Puncover
+                  </a>
+                </div>
+              </div>
+            </nav>
+          
+        </div>
+        <div id="inner_content">
+        
+    
+    <ol class="breadcrumb folders">
+        
+        <li><a href="../../../../../../../../../../../../home.html">home</a></li>
+        
+        <li><a href="../../../../../../../../../../../runner.html">runner</a></li>
+        
+        <li><a href="../../../../../../../../../../work.html">work</a></li>
+        
+        <li><a href="../../../../../../../../../openbsw.html">openbsw</a></li>
+        
+        <li><a href="../../../../../../../../openbsw.html">openbsw</a></li>
+        
+        <li><a href="../../../../../../../libs.html">libs</a></li>
+        
+        <li><a href="../../../../../../bsw.html">bsw</a></li>
+        
+        <li><a href="../../../../../doip.html">doip</a></li>
+        
+        <li><a href="../../../../include.html">include</a></li>
+        
+        <li><a href="../../../doip.html">doip</a></li>
+        
+        <li ><a href="../../server.html">server</a>
+            </li>
+
+        
+        <li class="active"><a href="../DoIpServerTransportConnection.h.html">DoIpServerTransportConnection.h</a>:34
+            </li>
+        
+    </ol>
+
+
+    <table class="table table-condensed">
+        <tbody>
+            <tr>
+                <th>Function</th>
+                <td colspan="5">
+                    <span class="icon-function">doip::DoIpServerTransportConnection::~DoIpServerTransportConnection()</span>
+                </td>
+            </tr>
+
+            <tr>
+                <th rowspan="2"></th>
+                <th>Address</th>
+                <th>Remarks</th>
+                <th>Stack</th>
+                <th>Code</th>
+                <th>Static</th>
+            </tr>
+            <tr>
+                <td>0x000238c8</td>
+                <td>
+    
+    
+</td>
+                <td></td>
+                <td>148</td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <th>No Callers</th>
+                <td colspan="5">
+                
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    Callees (1,
+                            <span title="sum of used bytes by all callees">
+                            Σ=4
+                            </span>
+                        )
+                    
+                </th>
+                <td colspan="5">
+                
+                    <a href="../../../../../../../../../../../../unknown/unknown/086a92efa2755c8c8b6c1fe4aa0da904.html">operator delete(void*, unsigned int) (4)</a>
+                    
+                
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    
+    <pre><a href="./ebf0ce25dd28e7b00a25548ef02e2d8a.html">doip::DoIpServerTransportConnection::~DoIpServerTransportConnection() (140)</a></pre>
+    
+
+    <pre>
+
+    _ZN4doip29DoIpServerTransportConnectionD4Ev():
+
+       238c8:	4922      	ldr	r1, [pc, #136]	@ (23954 <<a href="./0f3c88f0cbc6ada0f7c1a8830c16b0ef.html">doip::DoIpServerTransportConnection::~DoIpServerTransportConnection()</a>+0x8c>)
+
+    _ZN4doip17DoIpTcpConnectionD4Ev():
+
+       238ca:	4a23      	ldr	r2, [pc, #140]	@ (23958 <<a href="./0f3c88f0cbc6ada0f7c1a8830c16b0ef.html">doip::DoIpServerTransportConnection::~DoIpServerTransportConnection()</a>+0x90>)
+
+    _ZN3etl19intrusive_list_baseINS_18bidirectional_linkILj0EEEE5clearEv():
+
+       238cc:	f8d0 3130 	ldr.w	r3, [r0, #304]	@ 0x130
+
+    doip::DoIpServerTransportConnection::~DoIpServerTransportConnection():
+
+       238d0:	b510      	push	{r4, lr}
+
+       238d2:	4604      	mov	r4, r0
+
+    _ZN4doip29DoIpServerTransportConnectionD4Ev():
+
+       238d4:	f101 004c 	add.w	r0, r1, #76	@ 0x4c
+
+       238d8:	6060      	str	r0, [r4, #4]
+
+    _ZN4doip17DoIpTcpConnectionD4Ev():
+
+       238da:	f102 0044 	add.w	r0, r2, #68	@ 0x44
+
+    _ZN4doip29DoIpServerTransportConnectionD4Ev():
+
+       238de:	6021      	str	r1, [r4, #0]
+
+    _ZN4doip17DoIpTcpConnectionD4Ev():
+
+       238e0:	f8c4 00e0 	str.w	r0, [r4, #224]	@ 0xe0
+
+    _ZN4doip29DoIpServerTransportConnectionD4Ev():
+
+       238e4:	3184      	adds	r1, #132	@ 0x84
+
+    _ZN3etl19intrusive_list_baseINS_18bidirectional_linkILj0EEEE5clearEv():
+
+       238e6:	f504 7096 	add.w	r0, r4, #300	@ 0x12c
+
+    _ZN4doip29DoIpServerTransportConnectionD4Ev():
+
+       238ea:	60a1      	str	r1, [r4, #8]
+
+    _ZN4doip17DoIpTcpConnectionD4Ev():
+
+       238ec:	f8c4 20dc 	str.w	r2, [r4, #220]	@ 0xdc
+
+       238f0:	f102 0154 	add.w	r1, r2, #84	@ 0x54
+
+    _ZN3etl19intrusive_list_baseINS_18bidirectional_linkILj0EEEE5clearEv():
+
+       238f4:	4283      	cmp	r3, r0
+
+    _ZN4doip17DoIpTcpConnectionD4Ev():
+
+       238f6:	f102 0260 	add.w	r2, r2, #96	@ 0x60
+
+       238fa:	f8c4 10e4 	str.w	r1, [r4, #228]	@ 0xe4
+
+       238fe:	f8c4 20e8 	str.w	r2, [r4, #232]	@ 0xe8
+
+    _ZN3etl19intrusive_list_baseINS_18bidirectional_linkILj0EEEE5clearEv():
+
+       23902:	d006      	beq.n	23912 <<a href="./0f3c88f0cbc6ada0f7c1a8830c16b0ef.html">doip::DoIpServerTransportConnection::~DoIpServerTransportConnection()</a>+0x4a>
+
+    _ZN3etl18bidirectional_linkILj0EE5clearEv():
+
+       23904:	2100      	movs	r1, #0
+
+       23906:	461a      	mov	r2, r3
+
+    _ZN3etl19intrusive_list_baseINS_18bidirectional_linkILj0EEEE5clearEv():
+
+       23908:	685b      	ldr	r3, [r3, #4]
+
+    _ZN3etl18bidirectional_linkILj0EE5clearEv():
+
+       2390a:	6011      	str	r1, [r2, #0]
+
+    _ZN3etl19intrusive_list_baseINS_18bidirectional_linkILj0EEEE5clearEv():
+
+       2390c:	4283      	cmp	r3, r0
+
+    _ZN3etl18bidirectional_linkILj0EE5clearEv():
+
+       2390e:	6051      	str	r1, [r2, #4]
+
+    _ZN3etl19intrusive_list_baseINS_18bidirectional_linkILj0EEEE5clearEv():
+
+       23910:	d1f9      	bne.n	23906 <<a href="./0f3c88f0cbc6ada0f7c1a8830c16b0ef.html">doip::DoIpServerTransportConnection::~DoIpServerTransportConnection()</a>+0x3e>
+
+       23912:	f8d4 3124 	ldr.w	r3, [r4, #292]	@ 0x124
+
+       23916:	f504 7090 	add.w	r0, r4, #288	@ 0x120
+
+       2391a:	4283      	cmp	r3, r0
+
+       2391c:	d006      	beq.n	2392c <<a href="./0f3c88f0cbc6ada0f7c1a8830c16b0ef.html">doip::DoIpServerTransportConnection::~DoIpServerTransportConnection()</a>+0x64>
+
+    _ZN3etl18bidirectional_linkILj0EE5clearEv():
+
+       2391e:	2100      	movs	r1, #0
+
+       23920:	461a      	mov	r2, r3
+
+    _ZN3etl19intrusive_list_baseINS_18bidirectional_linkILj0EEEE5clearEv():
+
+       23922:	685b      	ldr	r3, [r3, #4]
+
+    _ZN3etl18bidirectional_linkILj0EE5clearEv():
+
+       23924:	6011      	str	r1, [r2, #0]
+
+    _ZN3etl19intrusive_list_baseINS_18bidirectional_linkILj0EEEE5clearEv():
+
+       23926:	4283      	cmp	r3, r0
+
+    _ZN3etl18bidirectional_linkILj0EE5clearEv():
+
+       23928:	6051      	str	r1, [r2, #4]
+
+    _ZN3etl19intrusive_list_baseINS_18bidirectional_linkILj0EEEE5clearEv():
+
+       2392a:	d1f9      	bne.n	23920 <<a href="./0f3c88f0cbc6ada0f7c1a8830c16b0ef.html">doip::DoIpServerTransportConnection::~DoIpServerTransportConnection()</a>+0x58>
+
+       2392c:	f8d4 30b8 	ldr.w	r3, [r4, #184]	@ 0xb8
+
+       23930:	f104 00b4 	add.w	r0, r4, #180	@ 0xb4
+
+       23934:	4298      	cmp	r0, r3
+
+       23936:	d006      	beq.n	23946 <<a href="./0f3c88f0cbc6ada0f7c1a8830c16b0ef.html">doip::DoIpServerTransportConnection::~DoIpServerTransportConnection()</a>+0x7e>
+
+    _ZN3etl18bidirectional_linkILj0EE5clearEv():
+
+       23938:	2100      	movs	r1, #0
+
+       2393a:	461a      	mov	r2, r3
+
+    _ZN3etl19intrusive_list_baseINS_18bidirectional_linkILj0EEEE5clearEv():
+
+       2393c:	685b      	ldr	r3, [r3, #4]
+
+    _ZN3etl18bidirectional_linkILj0EE5clearEv():
+
+       2393e:	6011      	str	r1, [r2, #0]
+
+    _ZN3etl19intrusive_list_baseINS_18bidirectional_linkILj0EEEE5clearEv():
+
+       23940:	4298      	cmp	r0, r3
+
+    _ZN3etl18bidirectional_linkILj0EE5clearEv():
+
+       23942:	6051      	str	r1, [r2, #4]
+
+    _ZN3etl19intrusive_list_baseINS_18bidirectional_linkILj0EEEE5clearEv():
+
+       23944:	d1f9      	bne.n	2393a <<a href="./0f3c88f0cbc6ada0f7c1a8830c16b0ef.html">doip::DoIpServerTransportConnection::~DoIpServerTransportConnection()</a>+0x72>
+
+    doip::DoIpServerTransportConnection::~DoIpServerTransportConnection():
+
+       23946:	4620      	mov	r0, r4
+
+       23948:	f44f 71de 	mov.w	r1, #444	@ 0x1bc
+
+       2394c:	f00b fda0 	bl	2f490 <<a href="../../../../../../../../../../../../unknown/unknown/086a92efa2755c8c8b6c1fe4aa0da904.html">operator delete(void*, unsigned int)</a>>
+
+       23950:	4620      	mov	r0, r4
+
+       23952:	bd10      	pop	{r4, pc}
+
+       23954:	00036f4c 	.word	0x00036f4c
+
+       23958:	00037158 	.word	0x00037158
+
+    </pre>
+
+    
+    <pre><a href="../../../../src/doip/server/DoIpServerTransportConnection.cpp/c15517fc1389a5d2779ed881fffc762b.html">doip::DoIpServerTransportConnection::DoIpServerTransportConnection(doip::DoIpConstants::ProtocolVersion, unsigned char, tcp::AbstractSocket&amp;, doip::DoIpServerTransportConnectionConfig const&amp;, etl::ipool&amp;, etl::ipool&amp;, doip::DoIpTcpConnection::ConnectionType) (140)</a></pre>
+    
+
+    
+
+
+        </div>
+    <div id="page-footer">
+        <hr>
+        
+            brought to you with 💖
+            by <a href="https://twitter.com/hbehrens">Heiko Behrens</a>
+            <span class="secondary">– MIT license, copyright © 2014-2026</span>
+        
+    </div>
+    </div>
+</body>
+</html>

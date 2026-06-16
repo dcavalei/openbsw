@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../../../../../../../../../../../static/css/style.css" />
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <title>Symbol - puncover</title>
+    
+</head>
+<body>
+    <div class="container" id="content">
+        <div class="page-header">
+            <nav class="navbar navbar-default" role="navigation">
+              <div class="container-fluid">
+                <div class="navbar-header">
+                  <a class="navbar-brand" href="../../../../../../../../../../../../index.html">
+                    Puncover
+                  </a>
+                </div>
+              </div>
+            </nav>
+          
+        </div>
+        <div id="inner_content">
+        
+    
+    <ol class="breadcrumb folders">
+        
+        <li><a href="../../../../../../../../../../../../home.html">home</a></li>
+        
+        <li><a href="../../../../../../../../../../../runner.html">runner</a></li>
+        
+        <li><a href="../../../../../../../../../../work.html">work</a></li>
+        
+        <li><a href="../../../../../../../../../openbsw.html">openbsw</a></li>
+        
+        <li><a href="../../../../../../../../openbsw.html">openbsw</a></li>
+        
+        <li><a href="../../../../../../../libs.html">libs</a></li>
+        
+        <li><a href="../../../../../../bsw.html">bsw</a></li>
+        
+        <li><a href="../../../../../transportRouterSimple.html">transportRouterSimple</a></li>
+        
+        <li><a href="../../../../src.html">src</a></li>
+        
+        <li><a href="../../../transport.html">transport</a></li>
+        
+        <li ><a href="../../routing.html">routing</a>
+            </li>
+
+        
+        <li class="active"><a href="../TransportRouterSimple.cpp.html">TransportRouterSimple.cpp</a>:110
+            </li>
+        
+    </ol>
+
+
+    <table class="table table-condensed">
+        <tbody>
+            <tr>
+                <th>Function</th>
+                <td colspan="5">
+                    <span class="icon-function">transport::TransportRouterSimple::releaseTransportMessage(transport::TransportMessage&amp;)</span>
+                </td>
+            </tr>
+
+            <tr>
+                <th rowspan="2"></th>
+                <th>Address</th>
+                <th>Remarks</th>
+                <th>Stack</th>
+                <th>Code</th>
+                <th>Static</th>
+            </tr>
+            <tr>
+                <td>0x0001595c</td>
+                <td>
+    <span class="label label-success">x-module</span>
+    
+</td>
+                <td>0 (static)</td>
+                <td>96</td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <th>Callers (1)</th>
+                <td colspan="5">
+                
+                    <a href="../../../../include/transport/routing/TransportRouterSimple.h/d6b8f8cdd224409a095415fc31245fe2.html">non-virtual thunk to transport::TransportRouterSimple::releaseTransportMessage(transport::TransportMessage&amp;) (8)</a>
+                    
+                
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    No Callees
+                    
+                </th>
+                <td colspan="5">
+                
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    
+    <pre><a href="../../../../../transport/src/TransportMessage.cpp/cb5b10ad13382cc8967f9f8eab50a0b4.html">transport::TransportMessage::increaseValidBytes(unsigned short) (36)</a></pre>
+    
+
+    <pre>
+
+    transport::TransportRouterSimple::releaseTransportMessage(transport::TransportMessage&):
+
+       1595c:	f3ef 8c10 	mrs	ip, PRIMASK
+
+       15960:	b672      	cpsid	i
+
+       15962:	f500 5341 	add.w	r3, r0, #12352	@ 0x3040
+
+       15966:	3310      	adds	r3, #16
+
+       15968:	4299      	cmp	r1, r3
+
+       1596a:	d01e      	beq.n	159aa <<a href="./a7b28a4426c22d5dc11ba2ed93be56f5.html">transport::TransportRouterSimple::releaseTransportMessage(transport::TransportMessage&)</a>+0x4e>
+
+       1596c:	f500 5341 	add.w	r3, r0, #12352	@ 0x3040
+
+       15970:	3320      	adds	r3, #32
+
+       15972:	4299      	cmp	r1, r3
+
+       15974:	d020      	beq.n	159b8 <<a href="./a7b28a4426c22d5dc11ba2ed93be56f5.html">transport::TransportRouterSimple::releaseTransportMessage(transport::TransportMessage&)</a>+0x5c>
+
+       15976:	f500 5341 	add.w	r3, r0, #12352	@ 0x3040
+
+       1597a:	3330      	adds	r3, #48	@ 0x30
+
+       1597c:	4299      	cmp	r1, r3
+
+       1597e:	bf08      	it	eq
+
+       15980:	2302      	moveq	r3, #2
+
+       15982:	d013      	beq.n	159ac <<a href="./a7b28a4426c22d5dc11ba2ed93be56f5.html">transport::TransportRouterSimple::releaseTransportMessage(transport::TransportMessage&)</a>+0x50>
+
+       15984:	f500 5342 	add.w	r3, r0, #12416	@ 0x3080
+
+       15988:	2200      	movs	r2, #0
+
+       1598a:	4299      	cmp	r1, r3
+
+       1598c:	f103 0310 	add.w	r3, r3, #16
+
+       15990:	d005      	beq.n	1599e <<a href="./a7b28a4426c22d5dc11ba2ed93be56f5.html">transport::TransportRouterSimple::releaseTransportMessage(transport::TransportMessage&)</a>+0x42>
+
+       15992:	3201      	adds	r2, #1
+
+       15994:	2a08      	cmp	r2, #8
+
+       15996:	d1f8      	bne.n	1598a <<a href="./a7b28a4426c22d5dc11ba2ed93be56f5.html">transport::TransportRouterSimple::releaseTransportMessage(transport::TransportMessage&)</a>+0x2e>
+
+       15998:	f38c 8810 	msr	PRIMASK, ip
+
+       1599c:	4770      	bx	lr
+
+       1599e:	4410      	add	r0, r2
+
+       159a0:	2300      	movs	r3, #0
+
+       159a2:	72c3      	strb	r3, [r0, #11]
+
+    resumeAllInterrupts():
+
+       159a4:	f38c 8810 	msr	PRIMASK, ip
+
+    transport::TransportRouterSimple::releaseTransportMessage(transport::TransportMessage&):
+
+       159a8:	4770      	bx	lr
+
+       159aa:	2300      	movs	r3, #0
+
+       159ac:	4418      	add	r0, r3
+
+       159ae:	2300      	movs	r3, #0
+
+       159b0:	7203      	strb	r3, [r0, #8]
+
+    resumeAllInterrupts():
+
+       159b2:	f38c 8810 	msr	PRIMASK, ip
+
+    transport::TransportRouterSimple::releaseTransportMessage(transport::TransportMessage&):
+
+       159b6:	4770      	bx	lr
+
+       159b8:	2301      	movs	r3, #1
+
+       159ba:	e7f7      	b.n	159ac <<a href="./a7b28a4426c22d5dc11ba2ed93be56f5.html">transport::TransportRouterSimple::releaseTransportMessage(transport::TransportMessage&)</a>+0x50>
+
+    </pre>
+
+    
+    <pre><a href="../../../../include/transport/routing/TransportRouterSimple.h/d6b8f8cdd224409a095415fc31245fe2.html">non-virtual thunk to transport::TransportRouterSimple::releaseTransportMessage(transport::TransportMessage&amp;) (8)</a></pre>
+    
+
+    
+
+
+        </div>
+    <div id="page-footer">
+        <hr>
+        
+            brought to you with 💖
+            by <a href="https://twitter.com/hbehrens">Heiko Behrens</a>
+            <span class="secondary">– MIT license, copyright © 2014-2026</span>
+        
+    </div>
+    </div>
+</body>
+</html>

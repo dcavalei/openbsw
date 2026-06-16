@@ -1,0 +1,717 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../../../../../../../../../../../static/css/style.css" />
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <title>Symbol - puncover</title>
+    
+</head>
+<body>
+    <div class="container" id="content">
+        <div class="page-header">
+            <nav class="navbar navbar-default" role="navigation">
+              <div class="container-fluid">
+                <div class="navbar-header">
+                  <a class="navbar-brand" href="../../../../../../../../../../../../index.html">
+                    Puncover
+                  </a>
+                </div>
+              </div>
+            </nav>
+          
+        </div>
+        <div id="inner_content">
+        
+    
+    <ol class="breadcrumb folders">
+        
+        <li><a href="../../../../../../../../../../../../home.html">home</a></li>
+        
+        <li><a href="../../../../../../../../../../../runner.html">runner</a></li>
+        
+        <li><a href="../../../../../../../../../../work.html">work</a></li>
+        
+        <li><a href="../../../../../../../../../openbsw.html">openbsw</a></li>
+        
+        <li><a href="../../../../../../../../openbsw.html">openbsw</a></li>
+        
+        <li><a href="../../../../../../../libs.html">libs</a></li>
+        
+        <li><a href="../../../../../../bsw.html">bsw</a></li>
+        
+        <li><a href="../../../../../util.html">util</a></li>
+        
+        <li><a href="../../../../src.html">src</a></li>
+        
+        <li><a href="../../../util.html">util</a></li>
+        
+        <li ><a href="../../stream.html">stream</a>
+            </li>
+
+        
+        <li class="active"><a href="../NormalizeLfOutputStream.cpp.html">NormalizeLfOutputStream.cpp</a>:23
+            </li>
+        
+    </ol>
+
+
+    <table class="table table-condensed">
+        <tbody>
+            <tr>
+                <th>Function</th>
+                <td colspan="5">
+                    <span class="icon-function">util::stream::NormalizeLfOutputStream::write(unsigned char)</span>
+                </td>
+            </tr>
+
+            <tr>
+                <th rowspan="2"></th>
+                <th>Address</th>
+                <th>Remarks</th>
+                <th>Stack</th>
+                <th>Code</th>
+                <th>Static</th>
+            </tr>
+            <tr>
+                <td>0x000131ac</td>
+                <td>
+    <span class="label label-success">x-module</span>
+    
+</td>
+                <td>56 (static)</td>
+                <td>464</td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <th>Callers (2)</th>
+                <td colspan="5">
+                
+                    <a href="../../../../../logger/include/logger/BufferedLoggerOutput.h/77ddf560cbcb70f7a56e4af40991c49f.html">logger::BufferedLoggerOutput&lt;interrupts::SuspendResumeAllInterruptsScopedLock, (unsigned char)128, unsigned short, unsigned long, unsigned long, logger::SectionPredicate&gt;::EntryOutputAdapter::onEntry(unsigned long, unsigned char, util::logger::Level, char const*, util::format::IPrintfArgumentReader&amp;) (132)</a>
+                    
+                        ,
+                    
+                
+                    <a href="../../../../../logger/include/logger/ConsoleEntryOutput.h/7272753aa15c3d5f05fc9d6fc4982b6d.html">logger::ConsoleEntryOutput&lt;unsigned long, unsigned long&gt;::outputEntry(unsigned long, unsigned long, util::logger::ComponentInfo const&amp;, util::logger::LevelInfo const&amp;, char const*, util::format::IPrintfArgumentReader&amp;) (52)</a>
+                    
+                
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    No Callees
+                    
+                </th>
+                <td colspan="5">
+                
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    
+    <pre><a href="./c44f1a0d5f07ebe4e769b832ad1e082b.html">util::stream::NormalizeLfOutputStream::isEof() const (100)</a></pre>
+    
+
+    <pre>
+
+    util::stream::NormalizeLfOutputStream::write(unsigned char):
+
+       131ac:	e92d 4ff0 	stmdb	sp!, {r4, r5, r6, r7, r8, r9, sl, fp, lr}
+
+       131b0:	290a      	cmp	r1, #10
+
+       131b2:	b085      	sub	sp, #20
+
+       131b4:	4607      	mov	r7, r0
+
+       131b6:	d017      	beq.n	131e8 <<a href="./ac8529e70f99fc7c03e2a64d3aee1426.html">util::stream::NormalizeLfOutputStream::write(unsigned char)</a>+0x3c>
+
+       131b8:	6840      	ldr	r0, [r0, #4]
+
+       131ba:	4a6f      	ldr	r2, [pc, #444]	@ (13378 <<a href="./ac8529e70f99fc7c03e2a64d3aee1426.html">util::stream::NormalizeLfOutputStream::write(unsigned char)</a>+0x1cc>)
+
+       131bc:	6803      	ldr	r3, [r0, #0]
+
+       131be:	685b      	ldr	r3, [r3, #4]
+
+       131c0:	4293      	cmp	r3, r2
+
+       131c2:	d10d      	bne.n	131e0 <<a href="./ac8529e70f99fc7c03e2a64d3aee1426.html">util::stream::NormalizeLfOutputStream::write(unsigned char)</a>+0x34>
+
+       131c4:	6840      	ldr	r0, [r0, #4]
+
+       131c6:	6802      	ldr	r2, [r0, #0]
+
+       131c8:	6852      	ldr	r2, [r2, #4]
+
+       131ca:	429a      	cmp	r2, r3
+
+       131cc:	f040 80d0 	bne.w	13370 <<a href="./ac8529e70f99fc7c03e2a64d3aee1426.html">util::stream::NormalizeLfOutputStream::write(unsigned char)</a>+0x1c4>
+
+       131d0:	6840      	ldr	r0, [r0, #4]
+
+       131d2:	6803      	ldr	r3, [r0, #0]
+
+       131d4:	685b      	ldr	r3, [r3, #4]
+
+       131d6:	4293      	cmp	r3, r2
+
+       131d8:	d102      	bne.n	131e0 <<a href="./ac8529e70f99fc7c03e2a64d3aee1426.html">util::stream::NormalizeLfOutputStream::write(unsigned char)</a>+0x34>
+
+       131da:	6840      	ldr	r0, [r0, #4]
+
+       131dc:	6803      	ldr	r3, [r0, #0]
+
+       131de:	685b      	ldr	r3, [r3, #4]
+
+       131e0:	b005      	add	sp, #20
+
+       131e2:	e8bd 4ff0 	ldmia.w	sp!, {r4, r5, r6, r7, r8, r9, sl, fp, lr}
+
+       131e6:	4718      	bx	r3
+
+       131e8:	6885      	ldr	r5, [r0, #8]
+
+       131ea:	7829      	ldrb	r1, [r5, #0]
+
+       131ec:	b339      	cbz	r1, 1323e <<a href="./ac8529e70f99fc7c03e2a64d3aee1426.html">util::stream::NormalizeLfOutputStream::write(unsigned char)</a>+0x92>
+
+       131ee:	4e62      	ldr	r6, [pc, #392]	@ (13378 <<a href="./ac8529e70f99fc7c03e2a64d3aee1426.html">util::stream::NormalizeLfOutputStream::write(unsigned char)</a>+0x1cc>)
+
+       131f0:	46a8      	mov	r8, r5
+
+       131f2:	f8d7 a004 	ldr.w	sl, [r7, #4]
+
+       131f6:	f8da 3000 	ldr.w	r3, [sl]
+
+       131fa:	685b      	ldr	r3, [r3, #4]
+
+       131fc:	42b3      	cmp	r3, r6
+
+       131fe:	d121      	bne.n	13244 <<a href="./ac8529e70f99fc7c03e2a64d3aee1426.html">util::stream::NormalizeLfOutputStream::write(unsigned char)</a>+0x98>
+
+       13200:	290a      	cmp	r1, #10
+
+       13202:	d028      	beq.n	13256 <<a href="./ac8529e70f99fc7c03e2a64d3aee1426.html">util::stream::NormalizeLfOutputStream::write(unsigned char)</a>+0xaa>
+
+       13204:	f8da 0004 	ldr.w	r0, [sl, #4]
+
+       13208:	6803      	ldr	r3, [r0, #0]
+
+       1320a:	685b      	ldr	r3, [r3, #4]
+
+       1320c:	42b3      	cmp	r3, r6
+
+       1320e:	d11a      	bne.n	13246 <<a href="./ac8529e70f99fc7c03e2a64d3aee1426.html">util::stream::NormalizeLfOutputStream::write(unsigned char)</a>+0x9a>
+
+       13210:	6840      	ldr	r0, [r0, #4]
+
+       13212:	6803      	ldr	r3, [r0, #0]
+
+       13214:	685b      	ldr	r3, [r3, #4]
+
+       13216:	42b3      	cmp	r3, r6
+
+       13218:	d115      	bne.n	13246 <<a href="./ac8529e70f99fc7c03e2a64d3aee1426.html">util::stream::NormalizeLfOutputStream::write(unsigned char)</a>+0x9a>
+
+       1321a:	6840      	ldr	r0, [r0, #4]
+
+       1321c:	6803      	ldr	r3, [r0, #0]
+
+       1321e:	685b      	ldr	r3, [r3, #4]
+
+       13220:	42b3      	cmp	r3, r6
+
+       13222:	d110      	bne.n	13246 <<a href="./ac8529e70f99fc7c03e2a64d3aee1426.html">util::stream::NormalizeLfOutputStream::write(unsigned char)</a>+0x9a>
+
+       13224:	6840      	ldr	r0, [r0, #4]
+
+       13226:	6803      	ldr	r3, [r0, #0]
+
+       13228:	685b      	ldr	r3, [r3, #4]
+
+       1322a:	42b3      	cmp	r3, r6
+
+       1322c:	d10b      	bne.n	13246 <<a href="./ac8529e70f99fc7c03e2a64d3aee1426.html">util::stream::NormalizeLfOutputStream::write(unsigned char)</a>+0x9a>
+
+       1322e:	6840      	ldr	r0, [r0, #4]
+
+       13230:	6803      	ldr	r3, [r0, #0]
+
+       13232:	685b      	ldr	r3, [r3, #4]
+
+       13234:	4798      	blx	r3
+
+       13236:	f818 1f01 	ldrb.w	r1, [r8, #1]!
+
+       1323a:	2900      	cmp	r1, #0
+
+       1323c:	d1d9      	bne.n	131f2 <<a href="./ac8529e70f99fc7c03e2a64d3aee1426.html">util::stream::NormalizeLfOutputStream::write(unsigned char)</a>+0x46>
+
+       1323e:	b005      	add	sp, #20
+
+       13240:	e8bd 8ff0 	ldmia.w	sp!, {r4, r5, r6, r7, r8, r9, sl, fp, pc}
+
+       13244:	4650      	mov	r0, sl
+
+       13246:	4798      	blx	r3
+
+       13248:	f818 1f01 	ldrb.w	r1, [r8, #1]!
+
+       1324c:	2900      	cmp	r1, #0
+
+       1324e:	d1d0      	bne.n	131f2 <<a href="./ac8529e70f99fc7c03e2a64d3aee1426.html">util::stream::NormalizeLfOutputStream::write(unsigned char)</a>+0x46>
+
+       13250:	b005      	add	sp, #20
+
+       13252:	e8bd 8ff0 	ldmia.w	sp!, {r4, r5, r6, r7, r8, r9, sl, fp, pc}
+
+       13256:	f8da 4008 	ldr.w	r4, [sl, #8]
+
+       1325a:	7821      	ldrb	r1, [r4, #0]
+
+       1325c:	2900      	cmp	r1, #0
+
+       1325e:	d0f3      	beq.n	13248 <<a href="./ac8529e70f99fc7c03e2a64d3aee1426.html">util::stream::NormalizeLfOutputStream::write(unsigned char)</a>+0x9c>
+
+       13260:	46a1      	mov	r9, r4
+
+       13262:	9703      	str	r7, [sp, #12]
+
+       13264:	e01b      	b.n	1329e <<a href="./ac8529e70f99fc7c03e2a64d3aee1426.html">util::stream::NormalizeLfOutputStream::write(unsigned char)</a>+0xf2>
+
+       13266:	6850      	ldr	r0, [r2, #4]
+
+       13268:	6803      	ldr	r3, [r0, #0]
+
+       1326a:	685b      	ldr	r3, [r3, #4]
+
+       1326c:	42b3      	cmp	r3, r6
+
+       1326e:	d17d      	bne.n	1336c <<a href="./ac8529e70f99fc7c03e2a64d3aee1426.html">util::stream::NormalizeLfOutputStream::write(unsigned char)</a>+0x1c0>
+
+       13270:	6840      	ldr	r0, [r0, #4]
+
+       13272:	6803      	ldr	r3, [r0, #0]
+
+       13274:	685b      	ldr	r3, [r3, #4]
+
+       13276:	42b3      	cmp	r3, r6
+
+       13278:	d178      	bne.n	1336c <<a href="./ac8529e70f99fc7c03e2a64d3aee1426.html">util::stream::NormalizeLfOutputStream::write(unsigned char)</a>+0x1c0>
+
+       1327a:	6840      	ldr	r0, [r0, #4]
+
+       1327c:	6803      	ldr	r3, [r0, #0]
+
+       1327e:	685b      	ldr	r3, [r3, #4]
+
+       13280:	42b3      	cmp	r3, r6
+
+       13282:	d173      	bne.n	1336c <<a href="./ac8529e70f99fc7c03e2a64d3aee1426.html">util::stream::NormalizeLfOutputStream::write(unsigned char)</a>+0x1c0>
+
+       13284:	6840      	ldr	r0, [r0, #4]
+
+       13286:	6803      	ldr	r3, [r0, #0]
+
+       13288:	685b      	ldr	r3, [r3, #4]
+
+       1328a:	42b3      	cmp	r3, r6
+
+       1328c:	d16e      	bne.n	1336c <<a href="./ac8529e70f99fc7c03e2a64d3aee1426.html">util::stream::NormalizeLfOutputStream::write(unsigned char)</a>+0x1c0>
+
+       1328e:	6840      	ldr	r0, [r0, #4]
+
+       13290:	6803      	ldr	r3, [r0, #0]
+
+       13292:	685b      	ldr	r3, [r3, #4]
+
+       13294:	4798      	blx	r3
+
+       13296:	f819 1f01 	ldrb.w	r1, [r9, #1]!
+
+       1329a:	2900      	cmp	r1, #0
+
+       1329c:	d05d      	beq.n	1335a <<a href="./ac8529e70f99fc7c03e2a64d3aee1426.html">util::stream::NormalizeLfOutputStream::write(unsigned char)</a>+0x1ae>
+
+       1329e:	f8da 2004 	ldr.w	r2, [sl, #4]
+
+       132a2:	6813      	ldr	r3, [r2, #0]
+
+       132a4:	685b      	ldr	r3, [r3, #4]
+
+       132a6:	42b3      	cmp	r3, r6
+
+       132a8:	d15f      	bne.n	1336a <<a href="./ac8529e70f99fc7c03e2a64d3aee1426.html">util::stream::NormalizeLfOutputStream::write(unsigned char)</a>+0x1be>
+
+       132aa:	290a      	cmp	r1, #10
+
+       132ac:	d1db      	bne.n	13266 <<a href="./ac8529e70f99fc7c03e2a64d3aee1426.html">util::stream::NormalizeLfOutputStream::write(unsigned char)</a>+0xba>
+
+       132ae:	6894      	ldr	r4, [r2, #8]
+
+       132b0:	7821      	ldrb	r1, [r4, #0]
+
+       132b2:	2900      	cmp	r1, #0
+
+       132b4:	d0ef      	beq.n	13296 <<a href="./ac8529e70f99fc7c03e2a64d3aee1426.html">util::stream::NormalizeLfOutputStream::write(unsigned char)</a>+0xea>
+
+       132b6:	f8cd a008 	str.w	sl, [sp, #8]
+
+       132ba:	4692      	mov	sl, r2
+
+       132bc:	e011      	b.n	132e2 <<a href="./ac8529e70f99fc7c03e2a64d3aee1426.html">util::stream::NormalizeLfOutputStream::write(unsigned char)</a>+0x136>
+
+       132be:	6868      	ldr	r0, [r5, #4]
+
+       132c0:	6803      	ldr	r3, [r0, #0]
+
+       132c2:	685b      	ldr	r3, [r3, #4]
+
+       132c4:	42b3      	cmp	r3, r6
+
+       132c6:	d14e      	bne.n	13366 <<a href="./ac8529e70f99fc7c03e2a64d3aee1426.html">util::stream::NormalizeLfOutputStream::write(unsigned char)</a>+0x1ba>
+
+       132c8:	6840      	ldr	r0, [r0, #4]
+
+       132ca:	6803      	ldr	r3, [r0, #0]
+
+       132cc:	685b      	ldr	r3, [r3, #4]
+
+       132ce:	42b3      	cmp	r3, r6
+
+       132d0:	d149      	bne.n	13366 <<a href="./ac8529e70f99fc7c03e2a64d3aee1426.html">util::stream::NormalizeLfOutputStream::write(unsigned char)</a>+0x1ba>
+
+       132d2:	6840      	ldr	r0, [r0, #4]
+
+       132d4:	6803      	ldr	r3, [r0, #0]
+
+       132d6:	685b      	ldr	r3, [r3, #4]
+
+       132d8:	4798      	blx	r3
+
+       132da:	f814 1f01 	ldrb.w	r1, [r4, #1]!
+
+       132de:	2900      	cmp	r1, #0
+
+       132e0:	d035      	beq.n	1334e <<a href="./ac8529e70f99fc7c03e2a64d3aee1426.html">util::stream::NormalizeLfOutputStream::write(unsigned char)</a>+0x1a2>
+
+       132e2:	f8da 5004 	ldr.w	r5, [sl, #4]
+
+       132e6:	682b      	ldr	r3, [r5, #0]
+
+       132e8:	685b      	ldr	r3, [r3, #4]
+
+       132ea:	42b3      	cmp	r3, r6
+
+       132ec:	d13a      	bne.n	13364 <<a href="./ac8529e70f99fc7c03e2a64d3aee1426.html">util::stream::NormalizeLfOutputStream::write(unsigned char)</a>+0x1b8>
+
+       132ee:	290a      	cmp	r1, #10
+
+       132f0:	d1e5      	bne.n	132be <<a href="./ac8529e70f99fc7c03e2a64d3aee1426.html">util::stream::NormalizeLfOutputStream::write(unsigned char)</a>+0x112>
+
+       132f2:	f8d5 b008 	ldr.w	fp, [r5, #8]
+
+       132f6:	f89b 1000 	ldrb.w	r1, [fp]
+
+       132fa:	2900      	cmp	r1, #0
+
+       132fc:	d0ed      	beq.n	132da <<a href="./ac8529e70f99fc7c03e2a64d3aee1426.html">util::stream::NormalizeLfOutputStream::write(unsigned char)</a>+0x12e>
+
+       132fe:	9401      	str	r4, [sp, #4]
+
+       13300:	465c      	mov	r4, fp
+
+       13302:	46ab      	mov	fp, r5
+
+       13304:	e006      	b.n	13314 <<a href="./ac8529e70f99fc7c03e2a64d3aee1426.html">util::stream::NormalizeLfOutputStream::write(unsigned char)</a>+0x168>
+
+       13306:	6878      	ldr	r0, [r7, #4]
+
+       13308:	6803      	ldr	r3, [r0, #0]
+
+       1330a:	685b      	ldr	r3, [r3, #4]
+
+       1330c:	4798      	blx	r3
+
+       1330e:	f814 1f01 	ldrb.w	r1, [r4, #1]!
+
+       13312:	b1b9      	cbz	r1, 13344 <<a href="./ac8529e70f99fc7c03e2a64d3aee1426.html">util::stream::NormalizeLfOutputStream::write(unsigned char)</a>+0x198>
+
+       13314:	f8db 7004 	ldr.w	r7, [fp, #4]
+
+       13318:	683b      	ldr	r3, [r7, #0]
+
+       1331a:	685b      	ldr	r3, [r3, #4]
+
+       1331c:	42b3      	cmp	r3, r6
+
+       1331e:	d11e      	bne.n	1335e <<a href="./ac8529e70f99fc7c03e2a64d3aee1426.html">util::stream::NormalizeLfOutputStream::write(unsigned char)</a>+0x1b2>
+
+       13320:	290a      	cmp	r1, #10
+
+       13322:	d1f0      	bne.n	13306 <<a href="./ac8529e70f99fc7c03e2a64d3aee1426.html">util::stream::NormalizeLfOutputStream::write(unsigned char)</a>+0x15a>
+
+       13324:	68bd      	ldr	r5, [r7, #8]
+
+       13326:	7829      	ldrb	r1, [r5, #0]
+
+       13328:	2900      	cmp	r1, #0
+
+       1332a:	d0f0      	beq.n	1330e <<a href="./ac8529e70f99fc7c03e2a64d3aee1426.html">util::stream::NormalizeLfOutputStream::write(unsigned char)</a>+0x162>
+
+       1332c:	6878      	ldr	r0, [r7, #4]
+
+       1332e:	6803      	ldr	r3, [r0, #0]
+
+       13330:	685b      	ldr	r3, [r3, #4]
+
+       13332:	4798      	blx	r3
+
+       13334:	f815 1f01 	ldrb.w	r1, [r5, #1]!
+
+       13338:	2900      	cmp	r1, #0
+
+       1333a:	d1f7      	bne.n	1332c <<a href="./ac8529e70f99fc7c03e2a64d3aee1426.html">util::stream::NormalizeLfOutputStream::write(unsigned char)</a>+0x180>
+
+       1333c:	f814 1f01 	ldrb.w	r1, [r4, #1]!
+
+       13340:	2900      	cmp	r1, #0
+
+       13342:	d1e7      	bne.n	13314 <<a href="./ac8529e70f99fc7c03e2a64d3aee1426.html">util::stream::NormalizeLfOutputStream::write(unsigned char)</a>+0x168>
+
+       13344:	9c01      	ldr	r4, [sp, #4]
+
+       13346:	f814 1f01 	ldrb.w	r1, [r4, #1]!
+
+       1334a:	2900      	cmp	r1, #0
+
+       1334c:	d1c9      	bne.n	132e2 <<a href="./ac8529e70f99fc7c03e2a64d3aee1426.html">util::stream::NormalizeLfOutputStream::write(unsigned char)</a>+0x136>
+
+       1334e:	f819 1f01 	ldrb.w	r1, [r9, #1]!
+
+       13352:	f8dd a008 	ldr.w	sl, [sp, #8]
+
+       13356:	2900      	cmp	r1, #0
+
+       13358:	d1a1      	bne.n	1329e <<a href="./ac8529e70f99fc7c03e2a64d3aee1426.html">util::stream::NormalizeLfOutputStream::write(unsigned char)</a>+0xf2>
+
+       1335a:	9f03      	ldr	r7, [sp, #12]
+
+       1335c:	e774      	b.n	13248 <<a href="./ac8529e70f99fc7c03e2a64d3aee1426.html">util::stream::NormalizeLfOutputStream::write(unsigned char)</a>+0x9c>
+
+       1335e:	4638      	mov	r0, r7
+
+       13360:	4798      	blx	r3
+
+       13362:	e7d4      	b.n	1330e <<a href="./ac8529e70f99fc7c03e2a64d3aee1426.html">util::stream::NormalizeLfOutputStream::write(unsigned char)</a>+0x162>
+
+       13364:	4628      	mov	r0, r5
+
+       13366:	4798      	blx	r3
+
+       13368:	e7b7      	b.n	132da <<a href="./ac8529e70f99fc7c03e2a64d3aee1426.html">util::stream::NormalizeLfOutputStream::write(unsigned char)</a>+0x12e>
+
+       1336a:	4610      	mov	r0, r2
+
+       1336c:	4798      	blx	r3
+
+       1336e:	e792      	b.n	13296 <<a href="./ac8529e70f99fc7c03e2a64d3aee1426.html">util::stream::NormalizeLfOutputStream::write(unsigned char)</a>+0xea>
+
+       13370:	b005      	add	sp, #20
+
+       13372:	e8bd 4ff0 	ldmia.w	sp!, {r4, r5, r6, r7, r8, r9, sl, fp, lr}
+
+       13376:	4710      	bx	r2
+
+       13378:	000131ad 	.word	0x000131ad
+
+    </pre>
+
+    
+    <pre><a href="./57d91dedc5b3e6198f5b768f016bc4f3.html">util::stream::NormalizeLfOutputStream::NormalizeLfOutputStream(util::stream::IOutputStream&amp;, char const*) (36)</a></pre>
+    
+
+    
+        <h1>Stack Worst-Case Scenarios</h1>
+        
+            <p>No callees for this function.</p>
+        
+        
+        <table class="table table-bordered table-hover table-condensed">
+        <thead>
+            <tr>
+                <th rowspan="2">#</th>
+                <th colspan="2" style="text-align: center">Stack</th>
+                <th colspan="2" style="text-align: center">Code</th>
+                <th rowspan="2" width="100%">Name</th>
+            </tr>
+            <tr>
+                <th class="col_size">&sum; = 416</th>
+                <th class="col_size"></th>
+                <th class="col_size">&sum;= 1,132</th>
+                <th class="col_size"></th>
+            </tr>
+        </thead>
+        <tbody>
+        
+            <tr>
+                <th>1</th>
+                <td class="col_size">
+                    
+                    416
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                56 
+            
+                </td>
+                <td class="col_size">
+                    
+                    
+                    1,132
+                    
+                    
+                </td>
+                <td class="col_size">464</td>
+                <td><a href="./ac8529e70f99fc7c03e2a64d3aee1426.html" class="icon-function">util::stream::NormalizeLfOutputStream::write(unsigned char)</a></td>
+            </tr>
+        
+            <tr>
+                <th>2</th>
+                <td class="col_size">
+                    
+                    360
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                64 
+            
+                </td>
+                <td class="col_size">
+                    
+                    
+                    668
+                    
+                    
+                </td>
+                <td class="col_size">132</td>
+                <td><a href="../../../../../logger/include/logger/BufferedLoggerOutput.h/77ddf560cbcb70f7a56e4af40991c49f.html" class="icon-function">logger::BufferedLoggerOutput&lt;interrupts::SuspendResumeAllInterruptsScopedLock, (unsigned char)128, unsigned short, unsigned long, unsigned long, logger::SectionPredicate&gt;::EntryOutputAdapter::onEntry(unsigned long, unsigned char, util::logger::Level, char const*, util::format::IPrintfArgumentReader&amp;)</a></td>
+            </tr>
+        
+            <tr>
+                <th>3</th>
+                <td class="col_size">
+                    
+                    296
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                240 
+            
+                </td>
+                <td class="col_size">
+                    
+                    
+                    536
+                    
+                    
+                </td>
+                <td class="col_size">364</td>
+                <td><a href="../../../../../logger/include/logger/BufferedLoggerOutput.h/c939e6f6bca589cc5e86a2bf3a5e247d.html" class="icon-function">logger::BufferedLoggerOutput&lt;interrupts::SuspendResumeAllInterruptsScopedLock, (unsigned char)128, unsigned short, unsigned long, unsigned long, logger::SectionPredicate&gt;::outputEntry(logger::IEntryOutput&lt;unsigned long, unsigned long&gt;&amp;, logger::EntryBuffer&lt;(unsigned char)128, unsigned long&gt;::EntryRef&amp;) const</a></td>
+            </tr>
+        
+            <tr>
+                <th>4</th>
+                <td class="col_size">
+                    
+                    56
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                32 
+            
+                </td>
+                <td class="col_size">
+                    
+                    
+                    172
+                    
+                    
+                </td>
+                <td class="col_size">72</td>
+                <td><a href="../../../../../loggerIntegration/src/logger/LoggerComposition.cpp/232e4ed732d7094da7054702ab440454.html" class="icon-function">logger::LoggerComposition::stop(etl::delegate&lt;void ()&gt; const&amp;)</a></td>
+            </tr>
+        
+            <tr>
+                <th>5</th>
+                <td class="col_size">
+                    
+                    24
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                16 
+            
+                </td>
+                <td class="col_size">
+                    
+                    
+                    100
+                    
+                    
+                </td>
+                <td class="col_size">40</td>
+                <td><a href="../../../../../../../executables/referenceApp/application/src/logger/logger.cpp/7131cf282129386042fb84b2357c3f12.html" class="icon-function">logger::flush()</a></td>
+            </tr>
+        
+            <tr>
+                <th>6</th>
+                <td class="col_size">
+                </td>
+                <td class="col_size">
+            
+                8 
+            
+                </td>
+                <td class="col_size">
+                    
+                </td>
+                <td class="col_size">60</td>
+                <td><a href="../../../../../../../executables/referenceApp/application/src/app/app.cpp/ce40fba5641de4644b68d678cfee651d.html" class="icon-function">app::IdleHandler::execute()</a></td>
+            </tr>
+        
+        </tbody>
+        
+    </table>
+        
+    
+
+
+        </div>
+    <div id="page-footer">
+        <hr>
+        
+            brought to you with 💖
+            by <a href="https://twitter.com/hbehrens">Heiko Behrens</a>
+            <span class="secondary">– MIT license, copyright © 2014-2026</span>
+        
+    </div>
+    </div>
+</body>
+</html>

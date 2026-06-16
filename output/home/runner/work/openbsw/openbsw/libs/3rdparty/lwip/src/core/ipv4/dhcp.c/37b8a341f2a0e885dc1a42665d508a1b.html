@@ -1,0 +1,1465 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../../../../../../../../../../../static/css/style.css" />
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <title>Symbol - puncover</title>
+    
+</head>
+<body>
+    <div class="container" id="content">
+        <div class="page-header">
+            <nav class="navbar navbar-default" role="navigation">
+              <div class="container-fluid">
+                <div class="navbar-header">
+                  <a class="navbar-brand" href="../../../../../../../../../../../../index.html">
+                    Puncover
+                  </a>
+                </div>
+              </div>
+            </nav>
+          
+        </div>
+        <div id="inner_content">
+        
+    
+    <ol class="breadcrumb folders">
+        
+        <li><a href="../../../../../../../../../../../../home.html">home</a></li>
+        
+        <li><a href="../../../../../../../../../../../runner.html">runner</a></li>
+        
+        <li><a href="../../../../../../../../../../work.html">work</a></li>
+        
+        <li><a href="../../../../../../../../../openbsw.html">openbsw</a></li>
+        
+        <li><a href="../../../../../../../../openbsw.html">openbsw</a></li>
+        
+        <li><a href="../../../../../../../libs.html">libs</a></li>
+        
+        <li><a href="../../../../../../3rdparty.html">3rdparty</a></li>
+        
+        <li><a href="../../../../../lwip.html">lwip</a></li>
+        
+        <li><a href="../../../../src.html">src</a></li>
+        
+        <li><a href="../../../core.html">core</a></li>
+        
+        <li ><a href="../../ipv4.html">ipv4</a>
+            </li>
+
+        
+        <li class="active"><a href="../dhcp.c.html">dhcp.c</a>:1762
+            </li>
+        
+    </ol>
+
+
+    <table class="table table-condensed">
+        <tbody>
+            <tr>
+                <th>Function</th>
+                <td colspan="5">
+                    <span class="icon-function">dhcp_recv</span>
+                </td>
+            </tr>
+
+            <tr>
+                <th rowspan="2"></th>
+                <th>Address</th>
+                <th>Remarks</th>
+                <th>Stack</th>
+                <th>Code</th>
+                <th>Static</th>
+            </tr>
+            <tr>
+                <td>0x0002118c</td>
+                <td>
+    
+    
+</td>
+                <td>64 (static)</td>
+                <td>1,212</td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <th>No Callers</th>
+                <td colspan="5">
+                
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    Callees (10,
+                            <span title="sum of used bytes by all callees">
+                            Σ=1624
+                            </span>
+                        )
+                    
+                </th>
+                <td colspan="5">
+                
+                    <a href="../../def.c/428f8c9ba30daa1894672e7ab0a12b38.html">lwip_htonl (4)</a>
+                    
+                        ,
+                    
+                
+                    <a href="../../../../../../../../../../../../unknown/unknown/716af30655f8f3d9b32750dca746ddfb.html">memset (16)</a>
+                    
+                        ,
+                    
+                
+                    <a href="../../pbuf.c/9b6fd2596874539050b4147be9634d35.html">pbuf_free (8)</a>
+                    
+                        ,
+                    
+                
+                    <a href="../../pbuf.c/cdfdde16e73aaf0264ac61a2ff241bb0.html">pbuf_copy_partial (140)</a>
+                    
+                        ,
+                    
+                
+                    <a href="./531b0697e8793123af939219778703cc.html">dhcp_select (528)</a>
+                    
+                        ,
+                    
+                
+                    <a href="./a4214e003d57d371924e1e60a852bb60.html">dhcp_handle_ack (136)</a>
+                    
+                        ,
+                    
+                
+                    <a href="./2b1ebc5954482d687e80ac66a03395fb.html">dhcp_bind (224)</a>
+                    
+                        ,
+                    
+                
+                    <a href="../../netif.c/7d4b6ac49a1bb495f62582300a5d9e4a.html">netif_set_addr (184)</a>
+                    
+                        ,
+                    
+                
+                    <a href="./8f67080f65f67dc415c23e160e5b6e3d.html">dhcp_discover (336)</a>
+                    
+                        ,
+                    
+                
+                    <a href="../acd.c/eb9093d73f30b410884276dd0a4e6d34.html">acd_start (48)</a>
+                    
+                
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    
+    <pre><a href="./531b0697e8793123af939219778703cc.html">dhcp_select (528)</a></pre>
+    
+
+    <pre>
+
+    dhcp_recv():
+
+       2118c:	4b8a      	ldr	r3, [pc, #552]	@ (213b8 <<a href="./37b8a341f2a0e885dc1a42665d508a1b.html">dhcp_recv</a>+0x22c>)
+
+       2118e:	e92d 4ff0 	stmdb	sp!, {r4, r5, r6, r7, r8, r9, sl, fp, lr}
+
+       21192:	685f      	ldr	r7, [r3, #4]
+
+       21194:	6abd      	ldr	r5, [r7, #40]	@ 0x28
+
+       21196:	b087      	sub	sp, #28
+
+       21198:	4614      	mov	r4, r2
+
+       2119a:	2d00      	cmp	r5, #0
+
+       2119c:	f000 808c 	beq.w	212b8 <<a href="./37b8a341f2a0e885dc1a42665d508a1b.html">dhcp_recv</a>+0x12c>
+
+       211a0:	792b      	ldrb	r3, [r5, #4]
+
+       211a2:	2b00      	cmp	r3, #0
+
+       211a4:	f000 8088 	beq.w	212b8 <<a href="./37b8a341f2a0e885dc1a42665d508a1b.html">dhcp_recv</a>+0x12c>
+
+       211a8:	8953      	ldrh	r3, [r2, #10]
+
+       211aa:	2b2b      	cmp	r3, #43	@ 0x2b
+
+       211ac:	f240 8084 	bls.w	212b8 <<a href="./37b8a341f2a0e885dc1a42665d508a1b.html">dhcp_recv</a>+0x12c>
+
+       211b0:	6851      	ldr	r1, [r2, #4]
+
+       211b2:	780b      	ldrb	r3, [r1, #0]
+
+       211b4:	2b02      	cmp	r3, #2
+
+       211b6:	d17f      	bne.n	212b8 <<a href="./37b8a341f2a0e885dc1a42665d508a1b.html">dhcp_recv</a>+0x12c>
+
+       211b8:	f897 2044 	ldrb.w	r2, [r7, #68]	@ 0x44
+
+       211bc:	b18a      	cbz	r2, 211e2 <<a href="./37b8a341f2a0e885dc1a42665d508a1b.html">dhcp_recv</a>+0x56>
+
+       211be:	f107 033d 	add.w	r3, r7, #61	@ 0x3d
+
+       211c2:	eb03 0c02 	add.w	ip, r3, r2
+
+       211c6:	f107 0e43 	add.w	lr, r7, #67	@ 0x43
+
+       211ca:	f101 021b 	add.w	r2, r1, #27
+
+       211ce:	f813 6f01 	ldrb.w	r6, [r3, #1]!
+
+       211d2:	f812 0f01 	ldrb.w	r0, [r2, #1]!
+
+       211d6:	4286      	cmp	r6, r0
+
+       211d8:	d16e      	bne.n	212b8 <<a href="./37b8a341f2a0e885dc1a42665d508a1b.html">dhcp_recv</a>+0x12c>
+
+       211da:	4563      	cmp	r3, ip
+
+       211dc:	d001      	beq.n	211e2 <<a href="./37b8a341f2a0e885dc1a42665d508a1b.html">dhcp_recv</a>+0x56>
+
+       211de:	4573      	cmp	r3, lr
+
+       211e0:	d1f5      	bne.n	211ce <<a href="./37b8a341f2a0e885dc1a42665d508a1b.html">dhcp_recv</a>+0x42>
+
+       211e2:	794a      	ldrb	r2, [r1, #5]
+
+       211e4:	790b      	ldrb	r3, [r1, #4]
+
+       211e6:	79c8      	ldrb	r0, [r1, #7]
+
+       211e8:	ea43 2302 	orr.w	r3, r3, r2, lsl #8
+
+       211ec:	798a      	ldrb	r2, [r1, #6]
+
+       211ee:	ea43 4302 	orr.w	r3, r3, r2, lsl #16
+
+       211f2:	ea43 6000 	orr.w	r0, r3, r0, lsl #24
+
+       211f6:	f002 f9cb 	bl	23590 <<a href="../../def.c/428f8c9ba30daa1894672e7ab0a12b38.html">lwip_htonl</a>>
+
+       211fa:	682b      	ldr	r3, [r5, #0]
+
+       211fc:	4298      	cmp	r0, r3
+
+       211fe:	d15b      	bne.n	212b8 <<a href="./37b8a341f2a0e885dc1a42665d508a1b.html">dhcp_recv</a>+0x12c>
+
+    dhcp_parse_reply():
+
+       21200:	486e      	ldr	r0, [pc, #440]	@ (213bc <<a href="./37b8a341f2a0e885dc1a42665d508a1b.html">dhcp_recv</a>+0x230>)
+
+       21202:	2208      	movs	r2, #8
+
+       21204:	2100      	movs	r1, #0
+
+       21206:	f7df f9d8 	bl	5ba <<a href="../../../../../../../../../../../../unknown/unknown/716af30655f8f3d9b32750dca746ddfb.html">memset</a>>
+
+       2120a:	8963      	ldrh	r3, [r4, #10]
+
+       2120c:	2b2b      	cmp	r3, #43	@ 0x2b
+
+       2120e:	d953      	bls.n	212b8 <<a href="./37b8a341f2a0e885dc1a42665d508a1b.html">dhcp_recv</a>+0x12c>
+
+       21210:	f8b4 b008 	ldrh.w	fp, [r4, #8]
+
+       21214:	9502      	str	r5, [sp, #8]
+
+       21216:	f04f 0a00 	mov.w	sl, #0
+
+       2121a:	4652      	mov	r2, sl
+
+       2121c:	f04f 09f0 	mov.w	r9, #240	@ 0xf0
+
+       21220:	46da      	mov	sl, fp
+
+       21222:	46b8      	mov	r8, r7
+
+       21224:	4693      	mov	fp, r2
+
+       21226:	4625      	mov	r5, r4
+
+       21228:	464e      	mov	r6, r9
+
+       2122a:	e006      	b.n	2123a <<a href="./37b8a341f2a0e885dc1a42665d508a1b.html">dhcp_recv</a>+0xae>
+
+       2122c:	682d      	ldr	r5, [r5, #0]
+
+       2122e:	b296      	uxth	r6, r2
+
+       21230:	fa1f fa83 	uxth.w	sl, r3
+
+       21234:	2d00      	cmp	r5, #0
+
+       21236:	d03f      	beq.n	212b8 <<a href="./37b8a341f2a0e885dc1a42665d508a1b.html">dhcp_recv</a>+0x12c>
+
+       21238:	896b      	ldrh	r3, [r5, #10]
+
+       2123a:	429e      	cmp	r6, r3
+
+       2123c:	eba6 0203 	sub.w	r2, r6, r3
+
+       21240:	ebaa 0303 	sub.w	r3, sl, r3
+
+       21244:	d2f2      	bcs.n	2122c <<a href="./37b8a341f2a0e885dc1a42665d508a1b.html">dhcp_recv</a>+0xa0>
+
+       21246:	4556      	cmp	r6, sl
+
+       21248:	686f      	ldr	r7, [r5, #4]
+
+       2124a:	bf38      	it	cc
+
+       2124c:	9401      	strcc	r4, [sp, #4]
+
+       2124e:	f080 80e0 	bcs.w	21412 <<a href="./37b8a341f2a0e885dc1a42665d508a1b.html">dhcp_recv</a>+0x286>
+
+       21252:	5db8      	ldrb	r0, [r7, r6]
+
+       21254:	28ff      	cmp	r0, #255	@ 0xff
+
+       21256:	f000 80db 	beq.w	21410 <<a href="./37b8a341f2a0e885dc1a42665d508a1b.html">dhcp_recv</a>+0x284>
+
+       2125a:	1cb3      	adds	r3, r6, #2
+
+       2125c:	b29b      	uxth	r3, r3
+
+       2125e:	42b3      	cmp	r3, r6
+
+       21260:	d329      	bcc.n	212b6 <<a href="./37b8a341f2a0e885dc1a42665d508a1b.html">dhcp_recv</a>+0x12a>
+
+       21262:	8969      	ldrh	r1, [r5, #10]
+
+       21264:	f106 0c01 	add.w	ip, r6, #1
+
+       21268:	458c      	cmp	ip, r1
+
+       2126a:	f280 80c9 	bge.w	21400 <<a href="./37b8a341f2a0e885dc1a42665d508a1b.html">dhcp_recv</a>+0x274>
+
+       2126e:	19ba      	adds	r2, r7, r6
+
+       21270:	7852      	ldrb	r2, [r2, #1]
+
+       21272:	283b      	cmp	r0, #59	@ 0x3b
+
+       21274:	d826      	bhi.n	212c4 <<a href="./37b8a341f2a0e885dc1a42665d508a1b.html">dhcp_recv</a>+0x138>
+
+       21276:	e8df f000 	tbb	[pc, r0]
+
+       2127a:	893d      	.short	0x893d
+
+       2127c:	25257c25 	.word	0x25257c25
+
+       21280:	25252525 	.word	0x25252525
+
+       21284:	25252525 	.word	0x25252525
+
+       21288:	25252525 	.word	0x25252525
+
+       2128c:	25252525 	.word	0x25252525
+
+       21290:	25252525 	.word	0x25252525
+
+       21294:	25252525 	.word	0x25252525
+
+       21298:	25252525 	.word	0x25252525
+
+       2129c:	25252525 	.word	0x25252525
+
+       212a0:	25252525 	.word	0x25252525
+
+       212a4:	25252525 	.word	0x25252525
+
+       212a8:	25252525 	.word	0x25252525
+
+       212ac:	94a57125 	.word	0x94a57125
+
+       212b0:	252525b6 	.word	0x252525b6
+
+       212b4:	4067      	.short	0x4067
+
+       212b6:	9c01      	ldr	r4, [sp, #4]
+
+    dhcp_recv():
+
+       212b8:	4620      	mov	r0, r4
+
+       212ba:	b007      	add	sp, #28
+
+       212bc:	e8bd 4ff0 	ldmia.w	sp!, {r4, r5, r6, r7, r8, r9, sl, fp, lr}
+
+       212c0:	f7fa bf54 	b.w	1c16c <<a href="../../pbuf.c/9b6fd2596874539050b4147be9634d35.html">pbuf_free</a>>
+
+    dhcp_parse_reply():
+
+       212c4:	4416      	add	r6, r2
+
+       212c6:	f64f 70fd 	movw	r0, #65533	@ 0xfffd
+
+       212ca:	4286      	cmp	r6, r0
+
+       212cc:	dcf3      	bgt.n	212b6 <<a href="./37b8a341f2a0e885dc1a42665d508a1b.html">dhcp_recv</a>+0x12a>
+
+       212ce:	4413      	add	r3, r2
+
+       212d0:	b29b      	uxth	r3, r3
+
+       212d2:	461e      	mov	r6, r3
+
+       212d4:	428e      	cmp	r6, r1
+
+       212d6:	f0c0 8098 	bcc.w	2140a <<a href="./37b8a341f2a0e885dc1a42665d508a1b.html">dhcp_recv</a>+0x27e>
+
+       212da:	1a76      	subs	r6, r6, r1
+
+       212dc:	ebaa 0101 	sub.w	r1, sl, r1
+
+       212e0:	b2b6      	uxth	r6, r6
+
+       212e2:	fa1f fa81 	uxth.w	sl, r1
+
+       212e6:	4556      	cmp	r6, sl
+
+       212e8:	d2e5      	bcs.n	212b6 <<a href="./37b8a341f2a0e885dc1a42665d508a1b.html">dhcp_recv</a>+0x12a>
+
+       212ea:	682d      	ldr	r5, [r5, #0]
+
+       212ec:	2d00      	cmp	r5, #0
+
+       212ee:	d0e2      	beq.n	212b6 <<a href="./37b8a341f2a0e885dc1a42665d508a1b.html">dhcp_recv</a>+0x12a>
+
+       212f0:	686f      	ldr	r7, [r5, #4]
+
+       212f2:	e7ae      	b.n	21252 <<a href="./37b8a341f2a0e885dc1a42665d508a1b.html">dhcp_recv</a>+0xc6>
+
+       212f4:	fa1f f68c 	uxth.w	r6, ip
+
+       212f8:	e7ec      	b.n	212d4 <<a href="./37b8a341f2a0e885dc1a42665d508a1b.html">dhcp_recv</a>+0x148>
+
+       212fa:	2a04      	cmp	r2, #4
+
+       212fc:	d1db      	bne.n	212b6 <<a href="./37b8a341f2a0e885dc1a42665d508a1b.html">dhcp_recv</a>+0x12a>
+
+       212fe:	f64f 70f9 	movw	r0, #65529	@ 0xfff9
+
+       21302:	4286      	cmp	r6, r0
+
+       21304:	d8d7      	bhi.n	212b6 <<a href="./37b8a341f2a0e885dc1a42665d508a1b.html">dhcp_recv</a>+0x12a>
+
+       21306:	3606      	adds	r6, #6
+
+       21308:	2005      	movs	r0, #5
+
+       2130a:	b2b6      	uxth	r6, r6
+
+       2130c:	4604      	mov	r4, r0
+
+       2130e:	482b      	ldr	r0, [pc, #172]	@ (213bc <<a href="./37b8a341f2a0e885dc1a42665d508a1b.html">dhcp_recv</a>+0x230>)
+
+       21310:	9003      	str	r0, [sp, #12]
+
+       21312:	2000      	movs	r0, #0
+
+       21314:	9005      	str	r0, [sp, #20]
+
+       21316:	4829      	ldr	r0, [pc, #164]	@ (213bc <<a href="./37b8a341f2a0e885dc1a42665d508a1b.html">dhcp_recv</a>+0x230>)
+
+       21318:	5d00      	ldrb	r0, [r0, r4]
+
+       2131a:	2800      	cmp	r0, #0
+
+       2131c:	d1da      	bne.n	212d4 <<a href="./37b8a341f2a0e885dc1a42665d508a1b.html">dhcp_recv</a>+0x148>
+
+       2131e:	a905      	add	r1, sp, #20
+
+       21320:	4628      	mov	r0, r5
+
+       21322:	9203      	str	r2, [sp, #12]
+
+       21324:	f7fb f82e 	bl	1c384 <<a href="../../pbuf.c/cdfdde16e73aaf0264ac61a2ff241bb0.html">pbuf_copy_partial</a>>
+
+       21328:	9a03      	ldr	r2, [sp, #12]
+
+       2132a:	4282      	cmp	r2, r0
+
+       2132c:	d1c3      	bne.n	212b6 <<a href="./37b8a341f2a0e885dc1a42665d508a1b.html">dhcp_recv</a>+0x12a>
+
+       2132e:	2a04      	cmp	r2, #4
+
+       21330:	f000 810e 	beq.w	21550 <<a href="./37b8a341f2a0e885dc1a42665d508a1b.html">dhcp_recv</a>+0x3c4>
+
+       21334:	f89d 0014 	ldrb.w	r0, [sp, #20]
+
+       21338:	4a21      	ldr	r2, [pc, #132]	@ (213c0 <<a href="./37b8a341f2a0e885dc1a42665d508a1b.html">dhcp_recv</a>+0x234>)
+
+       2133a:	8969      	ldrh	r1, [r5, #10]
+
+       2133c:	f842 0024 	str.w	r0, [r2, r4, lsl #2]
+
+       21340:	4a1e      	ldr	r2, [pc, #120]	@ (213bc <<a href="./37b8a341f2a0e885dc1a42665d508a1b.html">dhcp_recv</a>+0x230>)
+
+       21342:	2301      	movs	r3, #1
+
+       21344:	5513      	strb	r3, [r2, r4]
+
+       21346:	e7c5      	b.n	212d4 <<a href="./37b8a341f2a0e885dc1a42665d508a1b.html">dhcp_recv</a>+0x148>
+
+       21348:	2a04      	cmp	r2, #4
+
+       2134a:	d1b4      	bne.n	212b6 <<a href="./37b8a341f2a0e885dc1a42665d508a1b.html">dhcp_recv</a>+0x12a>
+
+       2134c:	f64f 70f9 	movw	r0, #65529	@ 0xfff9
+
+       21350:	4286      	cmp	r6, r0
+
+       21352:	d8b0      	bhi.n	212b6 <<a href="./37b8a341f2a0e885dc1a42665d508a1b.html">dhcp_recv</a>+0x12a>
+
+       21354:	3606      	adds	r6, #6
+
+       21356:	b2b6      	uxth	r6, r6
+
+       21358:	4614      	mov	r4, r2
+
+       2135a:	e7d8      	b.n	2130e <<a href="./37b8a341f2a0e885dc1a42665d508a1b.html">dhcp_recv</a>+0x182>
+
+       2135c:	2a04      	cmp	r2, #4
+
+       2135e:	d1aa      	bne.n	212b6 <<a href="./37b8a341f2a0e885dc1a42665d508a1b.html">dhcp_recv</a>+0x12a>
+
+       21360:	f64f 70f9 	movw	r0, #65529	@ 0xfff9
+
+       21364:	4286      	cmp	r6, r0
+
+       21366:	d8a6      	bhi.n	212b6 <<a href="./37b8a341f2a0e885dc1a42665d508a1b.html">dhcp_recv</a>+0x12a>
+
+       21368:	3606      	adds	r6, #6
+
+       2136a:	2003      	movs	r0, #3
+
+       2136c:	b2b6      	uxth	r6, r6
+
+       2136e:	4604      	mov	r4, r0
+
+       21370:	e7cd      	b.n	2130e <<a href="./37b8a341f2a0e885dc1a42665d508a1b.html">dhcp_recv</a>+0x182>
+
+       21372:	2a03      	cmp	r2, #3
+
+       21374:	d99f      	bls.n	212b6 <<a href="./37b8a341f2a0e885dc1a42665d508a1b.html">dhcp_recv</a>+0x12a>
+
+       21376:	4416      	add	r6, r2
+
+       21378:	f64f 70fd 	movw	r0, #65533	@ 0xfffd
+
+       2137c:	4286      	cmp	r6, r0
+
+       2137e:	dc9a      	bgt.n	212b6 <<a href="./37b8a341f2a0e885dc1a42665d508a1b.html">dhcp_recv</a>+0x12a>
+
+       21380:	441a      	add	r2, r3
+
+       21382:	b296      	uxth	r6, r2
+
+       21384:	2207      	movs	r2, #7
+
+       21386:	4614      	mov	r4, r2
+
+       21388:	2204      	movs	r2, #4
+
+       2138a:	e7c0      	b.n	2130e <<a href="./37b8a341f2a0e885dc1a42665d508a1b.html">dhcp_recv</a>+0x182>
+
+       2138c:	2a04      	cmp	r2, #4
+
+       2138e:	d192      	bne.n	212b6 <<a href="./37b8a341f2a0e885dc1a42665d508a1b.html">dhcp_recv</a>+0x12a>
+
+       21390:	f64f 70f9 	movw	r0, #65529	@ 0xfff9
+
+       21394:	4286      	cmp	r6, r0
+
+       21396:	d88e      	bhi.n	212b6 <<a href="./37b8a341f2a0e885dc1a42665d508a1b.html">dhcp_recv</a>+0x12a>
+
+       21398:	3606      	adds	r6, #6
+
+       2139a:	2006      	movs	r0, #6
+
+       2139c:	b2b6      	uxth	r6, r6
+
+       2139e:	4604      	mov	r4, r0
+
+       213a0:	e7b5      	b.n	2130e <<a href="./37b8a341f2a0e885dc1a42665d508a1b.html">dhcp_recv</a>+0x182>
+
+       213a2:	2a01      	cmp	r2, #1
+
+       213a4:	d187      	bne.n	212b6 <<a href="./37b8a341f2a0e885dc1a42665d508a1b.html">dhcp_recv</a>+0x12a>
+
+       213a6:	f64f 70fe 	movw	r0, #65534	@ 0xfffe
+
+       213aa:	4584      	cmp	ip, r0
+
+       213ac:	d083      	beq.n	212b6 <<a href="./37b8a341f2a0e885dc1a42665d508a1b.html">dhcp_recv</a>+0x12a>
+
+       213ae:	3603      	adds	r6, #3
+
+       213b0:	b2b6      	uxth	r6, r6
+
+       213b2:	4614      	mov	r4, r2
+
+       213b4:	e7ab      	b.n	2130e <<a href="./37b8a341f2a0e885dc1a42665d508a1b.html">dhcp_recv</a>+0x182>
+
+       213b6:	bf00      	nop
+
+       213b8:	1fff3d48 	.word	0x1fff3d48
+
+       213bc:	1fff743c 	.word	0x1fff743c
+
+       213c0:	1fff7444 	.word	0x1fff7444
+
+       213c4:	2a01      	cmp	r2, #1
+
+       213c6:	f47f af76 	bne.w	212b6 <<a href="./37b8a341f2a0e885dc1a42665d508a1b.html">dhcp_recv</a>+0x12a>
+
+       213ca:	f1b9 0ff0 	cmp.w	r9, #240	@ 0xf0
+
+       213ce:	f47f af72 	bne.w	212b6 <<a href="./37b8a341f2a0e885dc1a42665d508a1b.html">dhcp_recv</a>+0x12a>
+
+       213d2:	f64f 70fe 	movw	r0, #65534	@ 0xfffe
+
+       213d6:	4584      	cmp	ip, r0
+
+       213d8:	f43f af6d 	beq.w	212b6 <<a href="./37b8a341f2a0e885dc1a42665d508a1b.html">dhcp_recv</a>+0x12a>
+
+       213dc:	3603      	adds	r6, #3
+
+       213de:	2000      	movs	r0, #0
+
+       213e0:	b2b6      	uxth	r6, r6
+
+       213e2:	4604      	mov	r4, r0
+
+       213e4:	e793      	b.n	2130e <<a href="./37b8a341f2a0e885dc1a42665d508a1b.html">dhcp_recv</a>+0x182>
+
+       213e6:	2a04      	cmp	r2, #4
+
+       213e8:	f47f af65 	bne.w	212b6 <<a href="./37b8a341f2a0e885dc1a42665d508a1b.html">dhcp_recv</a>+0x12a>
+
+       213ec:	f64f 70f9 	movw	r0, #65529	@ 0xfff9
+
+       213f0:	4286      	cmp	r6, r0
+
+       213f2:	f63f af60 	bhi.w	212b6 <<a href="./37b8a341f2a0e885dc1a42665d508a1b.html">dhcp_recv</a>+0x12a>
+
+       213f6:	3606      	adds	r6, #6
+
+       213f8:	2002      	movs	r0, #2
+
+       213fa:	b2b6      	uxth	r6, r6
+
+       213fc:	4604      	mov	r4, r0
+
+       213fe:	e786      	b.n	2130e <<a href="./37b8a341f2a0e885dc1a42665d508a1b.html">dhcp_recv</a>+0x182>
+
+       21400:	682a      	ldr	r2, [r5, #0]
+
+       21402:	b332      	cbz	r2, 21452 <<a href="./37b8a341f2a0e885dc1a42665d508a1b.html">dhcp_recv</a>+0x2c6>
+
+       21404:	6852      	ldr	r2, [r2, #4]
+
+       21406:	7812      	ldrb	r2, [r2, #0]
+
+       21408:	e733      	b.n	21272 <<a href="./37b8a341f2a0e885dc1a42665d508a1b.html">dhcp_recv</a>+0xe6>
+
+       2140a:	4556      	cmp	r6, sl
+
+       2140c:	f4ff af21 	bcc.w	21252 <<a href="./37b8a341f2a0e885dc1a42665d508a1b.html">dhcp_recv</a>+0xc6>
+
+       21410:	9c01      	ldr	r4, [sp, #4]
+
+       21412:	4a8a      	ldr	r2, [pc, #552]	@ (2163c <<a href="./37b8a341f2a0e885dc1a42665d508a1b.html">dhcp_recv</a>+0x4b0>)
+
+       21414:	7813      	ldrb	r3, [r2, #0]
+
+       21416:	b14b      	cbz	r3, 2142c <<a href="./37b8a341f2a0e885dc1a42665d508a1b.html">dhcp_recv</a>+0x2a0>
+
+       21418:	4b89      	ldr	r3, [pc, #548]	@ (21640 <<a href="./37b8a341f2a0e885dc1a42665d508a1b.html">dhcp_recv</a>+0x4b4>)
+
+       2141a:	681b      	ldr	r3, [r3, #0]
+
+       2141c:	2100      	movs	r1, #0
+
+       2141e:	2b01      	cmp	r3, #1
+
+       21420:	7011      	strb	r1, [r2, #0]
+
+       21422:	d011      	beq.n	21448 <<a href="./37b8a341f2a0e885dc1a42665d508a1b.html">dhcp_recv</a>+0x2bc>
+
+       21424:	2b02      	cmp	r3, #2
+
+       21426:	d005      	beq.n	21434 <<a href="./37b8a341f2a0e885dc1a42665d508a1b.html">dhcp_recv</a>+0x2a8>
+
+       21428:	2b03      	cmp	r3, #3
+
+       2142a:	d00b      	beq.n	21444 <<a href="./37b8a341f2a0e885dc1a42665d508a1b.html">dhcp_recv</a>+0x2b8>
+
+       2142c:	f1bb 0f00 	cmp.w	fp, #0
+
+       21430:	f000 8092 	beq.w	21558 <<a href="./37b8a341f2a0e885dc1a42665d508a1b.html">dhcp_recv</a>+0x3cc>
+
+       21434:	f04f 0b00 	mov.w	fp, #0
+
+       21438:	f04f 0a6c 	mov.w	sl, #108	@ 0x6c
+
+       2143c:	f04f 092c 	mov.w	r9, #44	@ 0x2c
+
+       21440:	8963      	ldrh	r3, [r4, #10]
+
+       21442:	e6f0      	b.n	21226 <<a href="./37b8a341f2a0e885dc1a42665d508a1b.html">dhcp_recv</a>+0x9a>
+
+       21444:	f04f 0b01 	mov.w	fp, #1
+
+       21448:	f04f 0aec 	mov.w	sl, #236	@ 0xec
+
+       2144c:	f04f 096c 	mov.w	r9, #108	@ 0x6c
+
+       21450:	e7f6      	b.n	21440 <<a href="./37b8a341f2a0e885dc1a42665d508a1b.html">dhcp_recv</a>+0x2b4>
+
+       21452:	283b      	cmp	r0, #59	@ 0x3b
+
+       21454:	f63f af3d 	bhi.w	212d2 <<a href="./37b8a341f2a0e885dc1a42665d508a1b.html">dhcp_recv</a>+0x146>
+
+       21458:	a201      	add	r2, pc, #4	@ (adr r2, 21460 <<a href="./37b8a341f2a0e885dc1a42665d508a1b.html">dhcp_recv</a>+0x2d4>)
+
+       2145a:	f852 f020 	ldr.w	pc, [r2, r0, lsl #2]
+
+       2145e:	bf00      	nop
+
+       21460:	000212f5 	.word	0x000212f5
+
+       21464:	000212b7 	.word	0x000212b7
+
+       21468:	000212d3 	.word	0x000212d3
+
+       2146c:	000212b7 	.word	0x000212b7
+
+       21470:	000212d3 	.word	0x000212d3
+
+       21474:	000212d3 	.word	0x000212d3
+
+       21478:	000212d3 	.word	0x000212d3
+
+       2147c:	000212d3 	.word	0x000212d3
+
+       21480:	000212d3 	.word	0x000212d3
+
+       21484:	000212d3 	.word	0x000212d3
+
+       21488:	000212d3 	.word	0x000212d3
+
+       2148c:	000212d3 	.word	0x000212d3
+
+       21490:	000212d3 	.word	0x000212d3
+
+       21494:	000212d3 	.word	0x000212d3
+
+       21498:	000212d3 	.word	0x000212d3
+
+       2149c:	000212d3 	.word	0x000212d3
+
+       214a0:	000212d3 	.word	0x000212d3
+
+       214a4:	000212d3 	.word	0x000212d3
+
+       214a8:	000212d3 	.word	0x000212d3
+
+       214ac:	000212d3 	.word	0x000212d3
+
+       214b0:	000212d3 	.word	0x000212d3
+
+       214b4:	000212d3 	.word	0x000212d3
+
+       214b8:	000212d3 	.word	0x000212d3
+
+       214bc:	000212d3 	.word	0x000212d3
+
+       214c0:	000212d3 	.word	0x000212d3
+
+       214c4:	000212d3 	.word	0x000212d3
+
+       214c8:	000212d3 	.word	0x000212d3
+
+       214cc:	000212d3 	.word	0x000212d3
+
+       214d0:	000212d3 	.word	0x000212d3
+
+       214d4:	000212d3 	.word	0x000212d3
+
+       214d8:	000212d3 	.word	0x000212d3
+
+       214dc:	000212d3 	.word	0x000212d3
+
+       214e0:	000212d3 	.word	0x000212d3
+
+       214e4:	000212d3 	.word	0x000212d3
+
+       214e8:	000212d3 	.word	0x000212d3
+
+       214ec:	000212d3 	.word	0x000212d3
+
+       214f0:	000212d3 	.word	0x000212d3
+
+       214f4:	000212d3 	.word	0x000212d3
+
+       214f8:	000212d3 	.word	0x000212d3
+
+       214fc:	000212d3 	.word	0x000212d3
+
+       21500:	000212d3 	.word	0x000212d3
+
+       21504:	000212d3 	.word	0x000212d3
+
+       21508:	000212d3 	.word	0x000212d3
+
+       2150c:	000212d3 	.word	0x000212d3
+
+       21510:	000212d3 	.word	0x000212d3
+
+       21514:	000212d3 	.word	0x000212d3
+
+       21518:	000212d3 	.word	0x000212d3
+
+       2151c:	000212d3 	.word	0x000212d3
+
+       21520:	000212d3 	.word	0x000212d3
+
+       21524:	000212d3 	.word	0x000212d3
+
+       21528:	000212d3 	.word	0x000212d3
+
+       2152c:	000212b7 	.word	0x000212b7
+
+       21530:	000212b7 	.word	0x000212b7
+
+       21534:	000212b7 	.word	0x000212b7
+
+       21538:	000212b7 	.word	0x000212b7
+
+       2153c:	000212d3 	.word	0x000212d3
+
+       21540:	000212d3 	.word	0x000212d3
+
+       21544:	000212d3 	.word	0x000212d3
+
+       21548:	000212b7 	.word	0x000212b7
+
+       2154c:	000212b7 	.word	0x000212b7
+
+       21550:	9805      	ldr	r0, [sp, #20]
+
+       21552:	f002 f81d 	bl	23590 <<a href="../../def.c/428f8c9ba30daa1894672e7ab0a12b38.html">lwip_htonl</a>>
+
+       21556:	e6ef      	b.n	21338 <<a href="./37b8a341f2a0e885dc1a42665d508a1b.html">dhcp_recv</a>+0x1ac>
+
+    dhcp_recv():
+
+       21558:	7853      	ldrb	r3, [r2, #1]
+
+    dhcp_parse_reply():
+
+       2155a:	9d02      	ldr	r5, [sp, #8]
+
+       2155c:	4647      	mov	r7, r8
+
+       2155e:	46da      	mov	sl, fp
+
+    dhcp_recv():
+
+       21560:	2b00      	cmp	r3, #0
+
+       21562:	f43f aea9 	beq.w	212b8 <<a href="./37b8a341f2a0e885dc1a42665d508a1b.html">dhcp_recv</a>+0x12c>
+
+       21566:	4836      	ldr	r0, [pc, #216]	@ (21640 <<a href="./37b8a341f2a0e885dc1a42665d508a1b.html">dhcp_recv</a>+0x4b4>)
+
+       21568:	6866      	ldr	r6, [r4, #4]
+
+       2156a:	7903      	ldrb	r3, [r0, #4]
+
+       2156c:	2b05      	cmp	r3, #5
+
+       2156e:	d022      	beq.n	215b6 <<a href="./37b8a341f2a0e885dc1a42665d508a1b.html">dhcp_recv</a>+0x42a>
+
+       21570:	2b06      	cmp	r3, #6
+
+       21572:	d031      	beq.n	215d8 <<a href="./37b8a341f2a0e885dc1a42665d508a1b.html">dhcp_recv</a>+0x44c>
+
+       21574:	2b02      	cmp	r3, #2
+
+       21576:	f47f ae9f 	bne.w	212b8 <<a href="./37b8a341f2a0e885dc1a42665d508a1b.html">dhcp_recv</a>+0x12c>
+
+       2157a:	796b      	ldrb	r3, [r5, #5]
+
+       2157c:	2b06      	cmp	r3, #6
+
+       2157e:	f47f ae9b 	bne.w	212b8 <<a href="./37b8a341f2a0e885dc1a42665d508a1b.html">dhcp_recv</a>+0x12c>
+
+    dhcp_handle_offer():
+
+       21582:	7893      	ldrb	r3, [r2, #2]
+
+       21584:	2b00      	cmp	r3, #0
+
+       21586:	f43f ae97 	beq.w	212b8 <<a href="./37b8a341f2a0e885dc1a42665d508a1b.html">dhcp_recv</a>+0x12c>
+
+       2158a:	6abd      	ldr	r5, [r7, #40]	@ 0x28
+
+       2158c:	6880      	ldr	r0, [r0, #8]
+
+       2158e:	f8a5 a008 	strh.w	sl, [r5, #8]
+
+       21592:	f001 fffd 	bl	23590 <<a href="../../def.c/428f8c9ba30daa1894672e7ab0a12b38.html">lwip_htonl</a>>
+
+       21596:	61a8      	str	r0, [r5, #24]
+
+       21598:	7c72      	ldrb	r2, [r6, #17]
+
+       2159a:	7c33      	ldrb	r3, [r6, #16]
+
+       2159c:	ea43 2302 	orr.w	r3, r3, r2, lsl #8
+
+       215a0:	7cb2      	ldrb	r2, [r6, #18]
+
+       215a2:	ea43 4302 	orr.w	r3, r3, r2, lsl #16
+
+       215a6:	7cf2      	ldrb	r2, [r6, #19]
+
+       215a8:	ea43 6302 	orr.w	r3, r3, r2, lsl #24
+
+       215ac:	4638      	mov	r0, r7
+
+       215ae:	61eb      	str	r3, [r5, #28]
+
+       215b0:	f7ff fce4 	bl	20f7c <<a href="./531b0697e8793123af939219778703cc.html">dhcp_select</a>.isra.0>
+
+       215b4:	e680      	b.n	212b8 <<a href="./37b8a341f2a0e885dc1a42665d508a1b.html">dhcp_recv</a>+0x12c>
+
+    dhcp_recv():
+
+       215b6:	796b      	ldrb	r3, [r5, #5]
+
+       215b8:	f003 02fd 	and.w	r2, r3, #253	@ 0xfd
+
+       215bc:	2a01      	cmp	r2, #1
+
+       215be:	d025      	beq.n	2160c <<a href="./37b8a341f2a0e885dc1a42665d508a1b.html">dhcp_recv</a>+0x480>
+
+       215c0:	3b04      	subs	r3, #4
+
+       215c2:	2b01      	cmp	r3, #1
+
+       215c4:	f63f ae78 	bhi.w	212b8 <<a href="./37b8a341f2a0e885dc1a42665d508a1b.html">dhcp_recv</a>+0x12c>
+
+       215c8:	6ab8      	ldr	r0, [r7, #40]	@ 0x28
+
+       215ca:	4631      	mov	r1, r6
+
+       215cc:	f7ff fb22 	bl	20c14 <<a href="./a4214e003d57d371924e1e60a852bb60.html">dhcp_handle_ack</a>.isra.0>
+
+       215d0:	4638      	mov	r0, r7
+
+       215d2:	f7ff fa83 	bl	20adc <<a href="./2b1ebc5954482d687e80ac66a03395fb.html">dhcp_bind</a>>
+
+       215d6:	e66f      	b.n	212b8 <<a href="./37b8a341f2a0e885dc1a42665d508a1b.html">dhcp_recv</a>+0x12c>
+
+       215d8:	796b      	ldrb	r3, [r5, #5]
+
+       215da:	1eda      	subs	r2, r3, #3
+
+       215dc:	2a02      	cmp	r2, #2
+
+       215de:	d902      	bls.n	215e6 <<a href="./37b8a341f2a0e885dc1a42665d508a1b.html">dhcp_recv</a>+0x45a>
+
+       215e0:	2b01      	cmp	r3, #1
+
+       215e2:	f47f ae69 	bne.w	212b8 <<a href="./37b8a341f2a0e885dc1a42665d508a1b.html">dhcp_recv</a>+0x12c>
+
+    dhcp_handle_nak():
+
+       215e6:	6abb      	ldr	r3, [r7, #40]	@ 0x28
+
+    dhcp_set_state():
+
+       215e8:	795a      	ldrb	r2, [r3, #5]
+
+       215ea:	2a0c      	cmp	r2, #12
+
+       215ec:	d004      	beq.n	215f8 <<a href="./37b8a341f2a0e885dc1a42665d508a1b.html">dhcp_recv</a>+0x46c>
+
+       215ee:	2200      	movs	r2, #0
+
+       215f0:	210c      	movs	r1, #12
+
+       215f2:	7159      	strb	r1, [r3, #5]
+
+       215f4:	719a      	strb	r2, [r3, #6]
+
+       215f6:	811a      	strh	r2, [r3, #8]
+
+    dhcp_handle_nak():
+
+       215f8:	4b12      	ldr	r3, [pc, #72]	@ (21644 <<a href="./37b8a341f2a0e885dc1a42665d508a1b.html">dhcp_recv</a>+0x4b8>)
+
+       215fa:	4638      	mov	r0, r7
+
+       215fc:	461a      	mov	r2, r3
+
+       215fe:	4619      	mov	r1, r3
+
+       21600:	f7fa f9fe 	bl	1ba00 <<a href="../../netif.c/7d4b6ac49a1bb495f62582300a5d9e4a.html">netif_set_addr</a>>
+
+       21604:	4638      	mov	r0, r7
+
+       21606:	f7ff fc11 	bl	20e2c <<a href="./8f67080f65f67dc415c23e160e5b6e3d.html">dhcp_discover</a>.isra.0>
+
+       2160a:	e655      	b.n	212b8 <<a href="./37b8a341f2a0e885dc1a42665d508a1b.html">dhcp_recv</a>+0x12c>
+
+    dhcp_recv():
+
+       2160c:	6ab8      	ldr	r0, [r7, #40]	@ 0x28
+
+       2160e:	4631      	mov	r1, r6
+
+       21610:	f7ff fb00 	bl	20c14 <<a href="./a4214e003d57d371924e1e60a852bb60.html">dhcp_handle_ack</a>.isra.0>
+
+       21614:	f897 3045 	ldrb.w	r3, [r7, #69]	@ 0x45
+
+       21618:	071b      	lsls	r3, r3, #28
+
+       2161a:	d5d9      	bpl.n	215d0 <<a href="./37b8a341f2a0e885dc1a42665d508a1b.html">dhcp_recv</a>+0x444>
+
+    dhcp_check():
+
+       2161c:	6ab9      	ldr	r1, [r7, #40]	@ 0x28
+
+    dhcp_set_state():
+
+       2161e:	794b      	ldrb	r3, [r1, #5]
+
+       21620:	2b08      	cmp	r3, #8
+
+       21622:	d005      	beq.n	21630 <<a href="./37b8a341f2a0e885dc1a42665d508a1b.html">dhcp_recv</a>+0x4a4>
+
+       21624:	2308      	movs	r3, #8
+
+       21626:	714b      	strb	r3, [r1, #5]
+
+       21628:	f881 a006 	strb.w	sl, [r1, #6]
+
+       2162c:	f8a1 a008 	strh.w	sl, [r1, #8]
+
+    dhcp_check():
+
+       21630:	69ca      	ldr	r2, [r1, #28]
+
+       21632:	4638      	mov	r0, r7
+
+       21634:	3134      	adds	r1, #52	@ 0x34
+
+       21636:	f7fe ff75 	bl	20524 <<a href="../acd.c/eb9093d73f30b410884276dd0a4e6d34.html">acd_start</a>>
+
+       2163a:	e63d      	b.n	212b8 <<a href="./37b8a341f2a0e885dc1a42665d508a1b.html">dhcp_recv</a>+0x12c>
+
+       2163c:	1fff743c 	.word	0x1fff743c
+
+       21640:	1fff7444 	.word	0x1fff7444
+
+       21644:	00036f30 	.word	0x00036f30
+
+    </pre>
+
+    
+    <pre><a href="./de60063053ffa3eac5ed40dc737642f1.html">dhcp_conflict_callback (304)</a></pre>
+    
+
+    
+        <h1>Stack Worst-Case Scenarios</h1>
+        
+        <table class="table table-bordered table-hover table-condensed">
+        <thead>
+            <tr>
+                <th rowspan="2">#</th>
+                <th colspan="2" style="text-align: center">Stack</th>
+                <th colspan="2" style="text-align: center">Code</th>
+                <th rowspan="2" width="100%">Name</th>
+            </tr>
+            <tr>
+                <th class="col_size">&sum; = 488</th>
+                <th class="col_size"></th>
+                <th class="col_size">&sum;= 3,028</th>
+                <th class="col_size"></th>
+            </tr>
+        </thead>
+        <tbody>
+        
+            <tr>
+                <th>1</th>
+                <td class="col_size">
+                    
+                    488
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                48 
+            
+                </td>
+                <td class="col_size">
+                    
+                    
+                    3,028
+                    
+                    
+                </td>
+                <td class="col_size">68</td>
+                <td><a href="../../../../../../bsw/util/src/util/logger/Logger.cpp/d658d7c78dcca1ca01e61ef198b3eeaa.html" class="icon-function">util::logger::Logger::doLog(unsigned char, util::logger::Level, char const*, std::__va_list)</a></td>
+            </tr>
+        
+            <tr>
+                <th>2</th>
+                <td class="col_size">
+                    
+                    440
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                24 
+            
+                </td>
+                <td class="col_size">
+                    
+                    
+                    2,960
+                    
+                    
+                </td>
+                <td class="col_size">100</td>
+                <td><a href="../../../../../../../executables/referenceApp/application/src/logger/logger.cpp/98866fb3d81ee8db78cbfd1e2dfd931d.html" class="icon-function">log_lwipInfo</a></td>
+            </tr>
+        
+            <tr>
+                <th>3</th>
+                <td class="col_size">
+                    
+                    416
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                16 
+            
+                </td>
+                <td class="col_size">
+                    
+                    
+                    2,860
+                    
+                    
+                </td>
+                <td class="col_size">60</td>
+                <td><a href="../../memp.c/39d50c52143357af896630c36b8c515f.html" class="icon-function">memp_free</a></td>
+            </tr>
+        
+            <tr>
+                <th>4</th>
+                <td class="col_size">
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                </td>
+                <td class="col_size">
+                    
+                    
+                    2,800
+                    
+                    
+                </td>
+                <td class="col_size">112</td>
+                <td><a href="../../pbuf.c/9b6fd2596874539050b4147be9634d35.html" class="icon-function">pbuf_free</a></td>
+            </tr>
+        
+            <tr>
+                <th>5</th>
+                <td class="col_size">
+                    
+                    400
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                32 
+            
+                </td>
+                <td class="col_size">
+                    
+                    
+                    2,688
+                    
+                    
+                </td>
+                <td class="col_size">264</td>
+                <td><a href="../../pbuf.c/00f9d6c635a80626d607c18477d3504a.html" class="icon-function">pbuf_alloc</a></td>
+            </tr>
+        
+            <tr>
+                <th>6</th>
+                <td class="col_size">
+                    
+                    368
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                32 
+            
+                </td>
+                <td class="col_size">
+                    
+                    
+                    2,424
+                    
+                    
+                </td>
+                <td class="col_size">172</td>
+                <td><a href="../../tcp_out.c/4c45a821c89299dd22544f20511fc68d.html" class="icon-function">tcp_output_alloc_header_common</a></td>
+            </tr>
+        
+            <tr>
+                <th>7</th>
+                <td class="col_size">
+                    
+                    336
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                24 
+            
+                </td>
+                <td class="col_size">
+                    
+                    
+                    2,252
+                    
+                    
+                </td>
+                <td class="col_size">100</td>
+                <td><a href="../../tcp_out.c/750286e53faf5e6c6518b73dc75330b6.html" class="icon-function">tcp_send_empty_ack</a></td>
+            </tr>
+        
+            <tr>
+                <th>8</th>
+                <td class="col_size">
+                    
+                    312
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                64 
+            
+                </td>
+                <td class="col_size">
+                    
+                    
+                    2,152
+                    
+                    
+                </td>
+                <td class="col_size">1,040</td>
+                <td><a href="../../tcp_out.c/65142df0c7be77da97e3dbbc90844f1a.html" class="icon-function">tcp_output</a></td>
+            </tr>
+        
+            <tr>
+                <th>9</th>
+                <td class="col_size">
+                    
+                    248
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                8 
+            
+                </td>
+                <td class="col_size">
+                    
+                    
+                    1,112
+                    
+                    
+                </td>
+                <td class="col_size">92</td>
+                <td><a href="../../tcp.c/b9fce7e0b1692c774e7c7904cc0c9f1e.html" class="icon-function">tcp_pcb_remove</a></td>
+            </tr>
+        
+            <tr>
+                <th>10</th>
+                <td class="col_size">
+                    
+                    240
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                64 
+            
+                </td>
+                <td class="col_size">
+                    
+                    
+                    1,020
+                    
+                    
+                </td>
+                <td class="col_size">308</td>
+                <td><a href="../../tcp.c/65bf4b4d1cd8c2ab7ef11aba4b48c88a.html" class="icon-function">tcp_abandon</a></td>
+            </tr>
+        
+            <tr>
+                <th>11</th>
+                <td class="col_size">
+                    
+                    176
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                24 
+            
+                </td>
+                <td class="col_size">
+                    
+                    
+                    712
+                    
+                    
+                </td>
+                <td class="col_size">188</td>
+                <td><a href="../../tcp.c/df26d4b78a28ebef470fd1ef7233d047.html" class="icon-function">tcp_netif_ip_addr_changed</a></td>
+            </tr>
+        
+            <tr>
+                <th>12</th>
+                <td class="col_size">
+                    
+                    152
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                24 
+            
+                </td>
+                <td class="col_size">
+                    
+                    
+                    524
+                    
+                    
+                </td>
+                <td class="col_size">116</td>
+                <td><a href="../../netif.c/02ca1881b5a0fcf35803d50c5cd5a9a6.html" class="icon-function">netif_do_set_ipaddr</a></td>
+            </tr>
+        
+            <tr>
+                <th>13</th>
+                <td class="col_size">
+                    
+                    128
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                48 
+            
+                </td>
+                <td class="col_size">
+                    
+                    
+                    408
+                    
+                    
+                </td>
+                <td class="col_size">184</td>
+                <td><a href="../../netif.c/7d4b6ac49a1bb495f62582300a5d9e4a.html" class="icon-function">netif_set_addr</a></td>
+            </tr>
+        
+            <tr>
+                <th>14</th>
+                <td class="col_size">
+                    
+                    80
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                16 
+            
+                </td>
+                <td class="col_size">
+                    
+                </td>
+                <td class="col_size">224</td>
+                <td><a href="./2b1ebc5954482d687e80ac66a03395fb.html" class="icon-function">dhcp_bind</a></td>
+            </tr>
+        
+        </tbody>
+        
+        <tfoot>
+            <tr>
+                <th></th>
+                <th class="col_size">64
+                </th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+            </tr>
+        </tfoot>
+        
+    </table>
+        
+        
+            <p>No callers for this function.</p>
+        
+    
+
+
+        </div>
+    <div id="page-footer">
+        <hr>
+        
+            brought to you with 💖
+            by <a href="https://twitter.com/hbehrens">Heiko Behrens</a>
+            <span class="secondary">– MIT license, copyright © 2014-2026</span>
+        
+    </div>
+    </div>
+</body>
+</html>
